@@ -22,10 +22,21 @@ const Banner = () => {
   });
 
   const [showModal, setShowModal] = useState(false);
+  const [error, setError] = useState("");
+
 
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value, });
+    const { name, value } = e.target;
+    if (name === "phone_no") {
+      if (!/^\d{10}$/.test(value)) { 
+        setError("Invalid phone number. Please enter a 10-digit number.");
+      } else {
+        setError("");
+      }
+    }
+    setFormData({ ...formData, [name]: value });
   };
+
 
   const validatePhone = (phone) => {
     return /^[0-9]{10}$/.test(phone);
@@ -146,7 +157,8 @@ const Banner = () => {
                   team ensures your vision becomes a digital masterpiece.
                 </p>
                 <div className="pt-[30px] flex justify-center xl:justify-start wow animate__animated animate__zoomIn">
-                  <button onClick={toggleModal} className="cursor-custom dark:cursor-custom_light relative flex items-center justify-center xl:justify-start group overflow-hidden py-2 sm:py-3 px-3 sm:px-6 font-Secondary text-Primary text-[14px] sm:text-[16px] rounded-lg hover:bg-primary-dark uppercase font-semibold border-[3px] border-Primary tracking-wider transition-all duration-[0.5s] bg-white hover:border-[3px]">
+                  <button onClick={toggleModal} className="cursor-custom dark:cursor-custom_light relative flex items-center justify-center xl:justify-start group overflow-hidden py-2 sm:py-3 px-3 sm:px-6 font-Secondary text-Primary text-[14px] sm:text-[16px] rounded-lg
+                   hover:bg-primary-dark uppercase font-semibold border-[3px] border-Primary tracking-wider transition-all duration-[0.7s] bg-white hover:border-[3px]">
                     Let’s Build Together
                     <span className="absolute inset-0 w-[300px] h-[200px] bg-Primary group-hover:left-[130%] group-hover:top-[130%] transition-all duration-500 ease-out rotate-[25deg] left-[-320px] top-[-150px]"></span>
                   </button>
@@ -187,7 +199,13 @@ const Banner = () => {
                                 disabled={formStatus.isSubmitting}
                                 required
                               />
-                            </div>
+                                {error && <p className="text-red-500 text-sm">{error}</p>
+                                    }
+                              
+                                
+                                </div>
+                                
+                            {/* </div> */}
                             <div className="text-start w-full md:px-[10px] py-[10px] sm:py-[20px] wow animate__animated animate__zoomIn">
                               <label className="font-Secondary text-[14px] sm:text-[16px]">Your Message <span className="text-[#0073e9]">*</span></label>
                               <textarea
@@ -2553,3 +2571,20 @@ const Banner = () => {
 };
 
 export default Banner;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

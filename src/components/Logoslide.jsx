@@ -93,7 +93,7 @@ const Logoslide = () => {
             <Marquee direction='left' speed={100} className='relative'>
               {logoImage.map((logoImage, index) => (
                 <li key={index} >
-                  <img src={logoImage.Logo} className='mx-[40px]' />
+                  <img src={logoImage.Logo} className={`mx-[40px] ${index === 19 ? 'bg-white p-2 rounded' : ''}`}/>
                 </li>
               ))}
             </Marquee>
@@ -102,7 +102,7 @@ const Logoslide = () => {
             <Marquee direction='right' speed={100}>
               {logoImage.map((logoImage, index) => (
                 <li key={index}>
-                  <img src={logoImage.Logo} className='mx-[40px]' />
+                  <img src={logoImage.Logo} className={`mx-[40px] ${index === 19 ? 'bg-white p-2 rounded' : ''}`} />
                 </li>
               ))}
             </Marquee>

@@ -7339,7 +7339,7 @@ const Company = () => {
 								</svg>
 							</div>
 							<div className="w-full xl:w-6/12 flex flex-col justify-center pb-[30px] text-center xl:text-start">
-								<h2 className='text-[40px] sm:text-[46px] md:text-[60px] lg:text-[70px] 3xl:text-[80px] uppercase font-Secondary font-semibold wow animate__animated animate__zoomIn'>Our Company</h2>
+								<h2 className='text-[40px] sm:text-[46px] md:text-[60px] lg:text-[70px] 3xl:text-[80px] uppercase font-Secondary font-semibold wow animate__animated animate__zoomIn cursor-custom z-[30px];'>Our Company</h2>
 								<h4 className='text-[20px] sm:text-[24px] md:text-[28px] lg:text-[30px] 3xl:text-[34px] font-Secondary font-medium pb-[10px] capitalize wow animate__animated animate__zoomIn'>"Your Vision. Our Expertise. Unlimited Potential."</h4>
 								<p className='text-[16px] sm:text-[18px] md:text-[20px] font-Secondary wow animate__animated animate__zoomIn'>At The Hidden Idea, we believe that every great idea deserves to be brought to life with precision and expertise.  Our expert team combines creative vision with technicalknow.From the first spark of creativity to the final, polished product, our team of engineers, designers, and strategists work together to deliver cutting-edge solutions that align with your unique vision. With a focus on both the creative and technical aspects of every project, we ensure that your goals are not only achieved but surpassed, paving the way for long-term success and growth.</p>
 							</div>

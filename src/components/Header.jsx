@@ -94,9 +94,10 @@ const Header = ({ mobileMenuOpen, setMobileMenuOpen }) => {
     <header className={`p-4 bg-white dark:bg-black   duration-700 shadow-xl  ${mobileMenuOpen ? "shadow-none" : "shadow-xl dark:shadow-customTwo"} sticky top-0 z-50 animate-slideDown `}>
       <div className="container xl:mx-auto">
         <div className="flex items-center justify-between">
-          <Link to="/" className="cursor-custom dark:cursor-custom_light" onClick={() => window.scrollTo(0, 0)}>
-            <img src={Logo} alt="Logo" className="h-10 sm:h-[50px] md:h-[65px]" />
-          </Link>
+        <Link to="/" className="cursor-custom dark:cursor-custom_light" onClick={() => window.scrollTo(0, 0)}>
+  <img src={Logo} alt="Light Mode Logo" className="h-10 sm:h-[50px] md:h-[65px] block dark:hidden" />
+</Link>
+
           <div className=" lg:w-[78%] xl:w-[75%] 2xl:w-[72%] 3xl:w-[68%] justify-between hidden lg:flex items-center">
             <nav
               className={`${mobileMenuOpen ? "block" : "hidden"}
@@ -192,7 +193,7 @@ const Header = ({ mobileMenuOpen, setMobileMenuOpen }) => {
         </ul>
 
         <div className="flex justify-center pt-[30px]">
-          <button onClick={handleContactClick} class="relative flex items-center justify-center xl:justify-start   group  overflow-hidden py-2 sm:py-3 px-3 sm:px-6 font-Secondary text-Primary text-[14px] sm:text-[16px] rounded-lg hover:bg-primary-dark uppercase font-semibold border-[3px] border-Primary tracking-wider transition-all duration-[0.5s] bg-white  hover:border-[3px]">
+          <button onClick={handleContactClick} class="relative flex items-center justify-center xl:justify-start   group  overflow-hidden py-2 sm:py-3 px-3 sm:px-6 font-Secondary text-Primary text-[14px] sm:text-[16px] rounded-lg hover:bg-primary-dark uppercase font-semibold border-[3px] border-Primary tracking-wider transition-all duration-[0.7s] bg-white  hover:border-[3px]">
             Contact Us
             <span class="absolute inset-0 w-[300px] h-[200px] bg-Primary group-hover:left-[130%] group-hover:top-[130%] transition-all duration-500 ease-out rotate-[25deg] left-[-320px] top-[-150px]"></span>
           </button>
