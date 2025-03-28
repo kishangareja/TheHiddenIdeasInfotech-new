@@ -95,8 +95,8 @@ const Header = ({ mobileMenuOpen, setMobileMenuOpen }) => {
       <div className="container xl:mx-auto">
         <div className="flex items-center justify-between">
         <Link to="/" className="cursor-custom dark:cursor-custom_light" onClick={() => window.scrollTo(0, 0)}>
-  <img src={Logo} alt="Light Mode Logo" className="h-10 sm:h-[50px] md:h-[65px] block dark:hidden" />
-</Link>
+  <img src={Logo} alt=" Logo" className="h-10 sm:h-[50px] md:h-[65px]" />
+         </Link>
 
           <div className=" lg:w-[78%] xl:w-[75%] 2xl:w-[72%] 3xl:w-[68%] justify-between hidden lg:flex items-center">
             <nav

@@ -3,6 +3,7 @@ import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
     const formRef = useRef();
+    const [errors, setErrors] = useState({ email: "" });
     const [formData, setFormData] = useState({
         name: "",
         email: "",
@@ -135,12 +136,15 @@ const ContactForm = () => {
                                             disabled={formStatus.isSubmitting}
                                             required
                                         />
+                                         {errors.email && (
+                <p className="text-red-500 text-sm mt-1">{errors.email}</p>
+            )}
                                     </div>
                                     <div className="w-full md:w-6/12 md:px-[10px] py-[20px] wow animate__animated animate__zoomIn">
                                         <label className="font-Secondary">Phone Number <span className="text-[#0073e9]">*</span></label>
                                         <input
                                             className="pt-[20px] pb-[10px] w-full border-b-[2px] border-solid bg-[#7c787800] dark:bg-black border-Primary font-Secondary placeholder:font-Secondary placeholder:font-medium placeholder:text-[#7591B5] focus-visible:outline-none"
-                                            type="number"
+                                            type="tel"
                                             placeholder="Phone Number"
                                             name="phone_no"
                                             value={formData.phone_no}
@@ -148,6 +152,8 @@ const ContactForm = () => {
                                             disabled={formStatus.isSubmitting}
                                             required
                                         />
+                                              {errors.phone_no && <p className="text-red-500 text-sm mt-1">{errors.phone_no}</p>}
+                                    
                                     </div>
                                     <div className="w-full md:w-6/12 md:px-[10px] py-[20px] wow animate__animated animate__zoomIn">
                                         <label className="font-Secondary">Your Services <span className="text-[#0073e9]">*</span></label>

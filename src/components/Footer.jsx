@@ -10,13 +10,13 @@ const Footer = () => {
     const navigate = useNavigate();
 
     const handleContactClick = () => {
-        window.scrollTo(0, 0);  
+        window.scrollTo(0, 0);
         navigate("/contact");
         const contactSection = document.getElementById("contact-us");
         if (contactSection) {
-          contactSection.scrollIntoView({ behavior: "smooth" });
+            contactSection.scrollIntoView({ behavior: "smooth" });
         }
-      };
+    };
 
     const companyLinks = [
         {
@@ -38,7 +38,7 @@ const Footer = () => {
             id: 3,
             FLink: 'Contact',
             path: "/contact",
-        },  
+        },
     ]
 
     const serviceLinks = [
@@ -61,44 +61,64 @@ const Footer = () => {
     ]
 
     const socialLink = [
-            {
-                icon: <RiFacebookFill />,
-                path: "/facebook",
-            },
-            {
-                icon: <BiLogoLinkedin />,
-                path: "/linkdin",
-            },
-            {
-                icon: <BiLogoInstagramAlt />,
-                path: "/instagram",
-            },
-            {
-                icon: <BiLogoSkype />,
-                path: "skype:live:.cid.981927945f0b7178?chat",
-            },
+        {
+            icon: <RiFacebookFill />,
+            path: "/facebook",
+        },
+        {
+            icon: <BiLogoLinkedin />,
+            path: "/linkdin",
+        },
+        {
+            icon: <BiLogoInstagramAlt />,
+            path: "/instagram",
+        },
+        {
+            icon: <BiLogoSkype />,
+            path: "skype:live:.cid.981927945f0b7178?chat",
+        },
     ]
-    
+
     return (
         <>
-            <footer className='pt-[60px] xl:pt-[100px] bg-[#1173b942]'>
+            <footer className="pt-[60px] xl:pt-[100px] bg-[#1173b942] lg:ps-[120px] lg:pr-[80px]">
+
                 <div className="container">
                     <div className="row">
                         <div className="footer_top flex flex-wrap xl:flex-nowrap xl:gap-[30px] w-full">
-                            <div className="w-full md:w-6/12 xl:w-3/12 2xl:w-4/12 flex md:flex-col gap-[30px] pb-[50px] md:pb-[30px]">
+                            <div className="w-full md:w-6/12 xl:w-2/12 3xl:w-6/12 flex md:flex-col gap-[30px] pb-[50px] md:pb-[30px]">
                                 <div className=" px-[10px] xl:px-0 ">
                                     <div className='cursor-custom dark:cursor-custom_light pb-[30px] lg:pb-[40px] flex justify-center md:justify-start wow animate__animated animate__zoomIn'>
-                                       <Link to="/" className='cursor-custom' onClick={() => window.scrollTo(0, 0)}> <img src={logo} alt="" /></Link>
+                                        <Link to="/" className='cursor-custom' onClick={() => window.scrollTo(0, 0)}> <img src={logo} alt="" /></Link>
                                     </div>
                                     <ul className='flex flex-col gap-[25px]'>
                                         <li className='flex items-center justify-center md:justify-start wow animate__animated animate__zoomIn'>
                                             <img src={location} alt="" className='w-[25px] h-[25px]' />
                                             <p className='ps-[10px] font-Secondary font-medium text-[16px] 2xl:text-[18px] 3xl:text-[20px] tracking-wider text-center md:text-start'>235,Golden Square near Dmart mota varachha, surat,Gujarat 394105</p>
                                         </li>
-                                        <li className='flex items-center justify-center md:justify-start wow animate__animated animate__zoomIn'>
+                                        {/* <li className='flex items-center justify-center md:justify-start wow animate__animated animate__zoomIn'>
                                             <TbPhoneCall className='text-[26px]' />
-                                            <Link to={'tel:9687311505'} className='cursor-custom ps-[10px] font-Secondary font-medium text-[16px] 2xl:text-[18px] 3xl:text-[20px] tracking-wider'>+91 96873 11505</Link>
+                                            <Link to={'tel:9687311505'}   className='cursor-custom ps-[10px] font-Secondary font-medium text-[16px] 2xl:text-[18px] 3xl:text-[20px] tracking-wider'>+91 96873 11505</Link>
+                                    </li>
+                                    <li className='flex items-center justify-center md:justify-start wow animate__animated animate__zoomIn'>
+                                        <TbPhoneCall className='text-[26px]' />
+                                        <Link to={'tel:8200113410'} className='cursor-custom ps-[10px] font-Secondary font-medium text-[16px] 2xl:text-[18px] 3xl:text-[20px] tracking-wider'>
+                                            +91 82001 13410
+                                        </Link>
+                                    </li> */}
+                                        <li className='flex items-center justify-center md:justify-start gap-5 wow animate__animated animate__zoomIn'>
+                                            <TbPhoneCall className='text-[26px]' />
+                                            <div className='flex gap-5 flex-wrap'>
+                                                <Link to={'tel:9687311505'} className='cursor-custom font-Secondary font-medium text-[16px] 2xl:text-[18px] 3xl:text-[20px] tracking-wider'>
+                                                    +91 96873 11505
+                                                </Link>
+                                                <span>|</span>
+                                                <Link to={'tel:8200113410'} className='cursor-custom font-Secondary font-medium text-[16px] 2xl:text-[18px] 3xl:text-[20px] tracking-wider'>
+                                                    +91 82001 13410
+                                                </Link>
+                                            </div>
                                         </li>
+
                                         <li className='flex items-center justify-center md:justify-start wow animate__animated animate__zoomIn'>
                                             <TbClockHour4 className='text-[26px]' />
                                             <div className='ps-[10px] font-Secondary font-medium text-[16px] 2xl:text-[18px] 3xl:text-[20px] tracking-wider'>
@@ -107,7 +127,7 @@ const Footer = () => {
                                             </div>
                                         </li>
                                     </ul>
-                                </div>       
+                                </div>
                             </div>
                             <div className="w-full md:w-6/12 xl:w-2/12 pb-[50px] md:pb-[30px] xl:pb-0">
                                 <div className="flex flex-col gap-[15px] md:gap-[30px] px-[10px] xl:px-0 text-center md:text-start">
@@ -132,7 +152,7 @@ const Footer = () => {
                                     <ul className='flex flex-col gap-[10px] md:gap-[20px]'>
                                         {serviceLinks.map((serviceLinks, id) => (
                                             <li key={id} className='wow animate__animated animate__zoomIn'>
-                                                <NavLink  className={({ isActive }) => `cursor-custom uppercase font-semibold text-[16px] 2xl:text-[18px] 3xl:text-[20px] font-Secondary tracking-widest duration-200 text-[#374151]
+                                                <NavLink className={({ isActive }) => `cursor-custom uppercase font-semibold text-[16px] 2xl:text-[18px] 3xl:text-[20px] font-Secondary tracking-widest duration-200 text-[#374151]
                                                      hover:text-Primary`} onClick={() => window.scrollTo(0, 0)}>
                                                     {serviceLinks.FLink}
                                                 </NavLink>
@@ -156,8 +176,8 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className="footer_bottom py-[30px] flex flex-wrap md:flex-nowrap justify-center md:justify-between items-center px-[30px] lg:px-[50px] border-t-[1px] border-dotted border-[#0000005c]">
-                    <div className="text-[16px] lg:text-[18px] font-Primary font-medium pb-[20px] md:pb-0 text-center md:text-start wow animate__animated animate__zoomIn">
+                <div className="footer_bottom py-[30px] flex flex-wrap md:flex-nowrap justify-center md:justify-between items-center px-[30px] lg:px-[8px] border-t-[1px] border-dotted border-[#0000005c]">
+                    <div className="text-[16px] lg:text-[18px] font-Primary font-medium pb-[20px] md:pb-0 text-center  md:text-start wow animate__animated animate__zoomIn">
                         Copyright © 2025 <span className='font-bold text-Primary'>The Hidden Ideas.</span> All Rights Reserved
                     </div>
                     <ul className='flex gap-[10px] lg:gap-[20px]'>
@@ -171,7 +191,7 @@ const Footer = () => {
                         ))}
                     </ul>
                 </div>
-            </footer>
+            </footer >
         </>
     )
 }
