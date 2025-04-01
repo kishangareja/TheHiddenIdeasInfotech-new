@@ -68,7 +68,9 @@ const navLinks = [
 
 const Header = ({ mobileMenuOpen, setMobileMenuOpen }) => {
   const [dropdownOpenIndex, setDropdownOpenIndex] = useState(null);
-
+  const [searchQuery, setSearchQuery] = useState(""); 
+  const [filteredLinks, setFilteredLinks] = useState(navLinks); // To store filtered nav links based on search
+  
   const navigate = useNavigate();
 
   const handleContactClick = () => {
@@ -91,20 +93,19 @@ const Header = ({ mobileMenuOpen, setMobileMenuOpen }) => {
   };
 
   return (
-    <header className={`p-4 bg-white dark:bg-black   duration-700 shadow-xl  ${mobileMenuOpen ? "shadow-none" : "shadow-xl dark:shadow-customTwo"} sticky top-0 z-50 animate-slideDown `}>
+    <>
+    <header className={`p-4 bg-white dark:bg-black duration-700 shadow-xl ${mobileMenuOpen ? "shadow-none" : "shadow-xl dark:shadow-customTwo"} sticky top-0 z-50 animate-slideDown`}>
       <div className="container xl:mx-auto">
         <div className="flex items-center justify-between">
-        <Link to="/" className="cursor-custom dark:cursor-custom_light" onClick={() => window.scrollTo(0, 0)}>
-  <img src={Logo} alt=" Logo" className="h-10 sm:h-[50px] md:h-[65px]" />
-         </Link>
+          <Link to="/" className="cursor-custom dark:cursor-custom_light" onClick={() => window.scrollTo(0, 0)}>
+            <img src={Logo} alt=" Logo" className="h-10 sm:h-[50px] md:h-[65px]" />
+          </Link>
 
-          <div className=" lg:w-[78%] xl:w-[75%] 2xl:w-[72%] 3xl:w-[68%] justify-between hidden lg:flex items-center">
-            <nav
-              className={`${mobileMenuOpen ? "block" : "hidden"}
-    lg:flex lg:items-center lg:space-x-6 transition-all duration-300 ease-in-out`}
-            >
+          
+           <div className="lg:w-[78%] xl:w-[75%] 2xl:w-[72%] 3xl:w-[68%] justify-between hidden lg:flex items-center">
+            <nav className={`${mobileMenuOpen ? "block" : "hidden"} lg:flex lg:items-center lg:space-x-6 transition-all duration-300 ease-in-out`}>
               <ul className="flex flex-col lg:flex-row">
-                {navLinks.map((link, index) => (
+                {filteredLinks.map((link, index) => (
                   <li
                     key={index}
                     className="relative px-2 xl:px-4 py-2 lg:py-0"
@@ -125,11 +126,8 @@ const Header = ({ mobileMenuOpen, setMobileMenuOpen }) => {
                     </NavLink>
                     {link.submenu && (
                       <ul
-                        className={`flex absolute left-0 right-0 top-full bg-white shadow-process w-max z-10 overflow-hidden transition-all duration-300 ease-in-out rounded-lg  ${dropdownOpenIndex === index ? "max-h-[500px]" : "max-h-0"
-                          }`}
-                        style={{
-                          transition: "max-height 0.4s ease-in-out",
-                        }}
+                        className={`flex absolute left-0 right-0 top-full bg-white shadow-process w-max z-10 overflow-hidden transition-all duration-300 ease-in-out rounded-lg  ${dropdownOpenIndex === index ? "max-h-[500px]" : "max-h-0"}`}
+                        style={{ transition: "max-height 0.4s ease-in-out" }}
                       >
                         {link.submenu.map((submenuCategory, id) => (
                           <li key={id} className="px-8 py-6 border-r-[1px] bg-white dark:bg-black">
@@ -139,8 +137,7 @@ const Header = ({ mobileMenuOpen, setMobileMenuOpen }) => {
                                 <li key={subId}>
                                   <NavLink
                                     className={({ isActive }) =>
-                                      `cursor-custom dark:cursor-custom_light block text-[14px] py-[10px]  font-Secondary tracking-wider font-semibold  text-gray-700 dark:text-white
-                                      }`
+                                      `cursor-custom dark:cursor-custom_light block text-[14px] py-[10px]  font-Secondary tracking-wider font-semibold  text-gray-700 dark:text-white`
                                     }
                                     onClick={() => window.scrollTo(0, 0)}
                                   >
@@ -157,14 +154,18 @@ const Header = ({ mobileMenuOpen, setMobileMenuOpen }) => {
                 ))}
               </ul>
             </nav>
+            <a href="https://hiddenideasinfotech.com/" target="_blank"></a>
+
             <div className="flex gap-[10px] items-center">
               <DarkModeToggle />
-              <button onClick={handleContactClick} class="cursor-custom dark:cursor-custom_light relative flex items-center justify-center xl:justify-start   group  overflow-hidden py-2 sm:py-3 px-3 sm:px-6 font-Secondary text-Primary text-[14px] sm:text-[16px] rounded-lg hover:bg-primary-dark uppercase font-semibold border-[3px] border-Primary tracking-wider transition-all duration-[0.5s] bg-white  hover:border-[3px]">
+              <button onClick={handleContactClick} className="cursor-custom dark:cursor-custom_light relative flex items-center justify-center xl:justify-start group overflow-hidden py-2 sm:py-3 px-3 sm:px-6 font-Secondary text-Primary text-[14px] sm:text-[16px] rounded-lg hover:bg-primary-dark uppercase font-semibold border-[3px] border-Primary tracking-wider transition-all duration-[0.5s] bg-white hover:border-[3px]">
                 Contact Us
-                <span class="absolute inset-0 w-[300px] h-[200px] bg-Primary group-hover:left-[130%] group-hover:top-[130%] transition-all duration-500 ease-out rotate-[25deg] left-[-320px] top-[-150px]"></span>
+             
+               <span class="absolute inset-0 w-[300px] h-[200px] bg-Primary group-hover:left-[130%] group-hover:top-[130%] transition-all duration-500 ease-out rotate-[25deg] left-[-320px] top-[-150px]"></span>
               </button>
             </div>
-          </div>
+          
+          </div> 
 
           <div className="hamburger-menu flex items-center gap-[10px] lg:hidden">
           <DarkModeToggle />
@@ -198,12 +199,15 @@ const Header = ({ mobileMenuOpen, setMobileMenuOpen }) => {
             <span class="absolute inset-0 w-[300px] h-[200px] bg-Primary group-hover:left-[130%] group-hover:top-[130%] transition-all duration-500 ease-out rotate-[25deg] left-[-320px] top-[-150px]"></span>
           </button>
         </div>
+        
       </div>
+     
     </header>
+    </>
   );
 };
 
 
 export default Header;
-
+ 
 
