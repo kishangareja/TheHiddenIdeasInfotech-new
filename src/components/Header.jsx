@@ -76,7 +76,7 @@ const Header = ({ mobileMenuOpen, setMobileMenuOpen }) => {
   const handleContactClick = () => {
     window.scrollTo(0, 0);
     setMobileMenuOpen(false);
-    navigate("/contact");
+    navigate("/contactform");
     const contactSection = document.getElementById("contact-us");
     if (contactSection) {
       contactSection.scrollIntoView({ behavior: "smooth" });
@@ -98,10 +98,9 @@ const Header = ({ mobileMenuOpen, setMobileMenuOpen }) => {
       <div className="container xl:mx-auto">
         <div className="flex items-center justify-between">
           <Link to="/" className="cursor-custom dark:cursor-custom_light" onClick={() => window.scrollTo(0, 0)}>
-            <img src={Logo} alt=" Logo" className="h-10 sm:h-[50px] md:h-[65px]" />
+            <img src={Logo} alt="Logo" className="h-10 sm:h-[50px] md:h-[65px]" />
           </Link>
 
-          
            <div className="lg:w-[78%] xl:w-[75%] 2xl:w-[72%] 3xl:w-[68%] justify-between hidden lg:flex items-center">
             <nav className={`${mobileMenuOpen ? "block" : "hidden"} lg:flex lg:items-center lg:space-x-6 transition-all duration-300 ease-in-out`}>
               <ul className="flex flex-col lg:flex-row">

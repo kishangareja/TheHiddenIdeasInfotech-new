@@ -22,15 +22,15 @@ const Count = () => {
 
     const countData = [
         {
-            value: 5,
-            title: 'Excellence and Expertise',  // Years Experiance
+            value: 10,
+            title: 'Tech stacks',  // Years Experiance
         },
         {
-            value: 500,
-            title: 'Successful Project Deliver ',
+            value: 40,
+            title: 'Successful Project Delivered',
         },
         {
-            value: 500,
+            value: 70,
             title: 'Happy Clients',
         },
         {

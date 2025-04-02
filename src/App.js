@@ -6,6 +6,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import usePreventInspect from "./components/usePreventInspect";
 import "./App.css";
 import Loader from "./components/Loader";
+import ContactForm from "./components/ContactForm";
 
 const Home = lazy(() => import("./page/Home"));
 const About = lazy(() => import("./page/About"));
@@ -17,7 +18,7 @@ function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   
-  usePreventInspect();
+  // usePreventInspect();
 
   return (
     <>
@@ -32,6 +33,7 @@ function App() {
               <Route path="/service" element={<ServicePage />} />
               <Route path="/company" element={<CompanyPage />} />
               <Route path="/contact" element={<ContactPage />} />
+              <Route path="/contactform" element={<ContactForm />} />
             </Routes>
           </Suspense>
           <Footer />
