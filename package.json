@@ -8,11 +8,12 @@
     "cra-template": "1.2.0",
     "framer-motion": "^12.4.2",
     "lucide-react": "^0.475.0",
+    "object-inspect": "^1.13.4",
     "react": "^18.0.0",
     "react-countup": "^6.5.3",
     "react-dom": "^18.0.0",
     "react-fast-marquee": "^1.6.5",
-    "react-icons": "^5.4.0",
+    "react-icons": "^5.5.0",
     "react-router-dom": "^6.0.0",
     "react-scripts": "5.0.1",
     "react-slick": "^0.30.3",
@@ -26,7 +27,6 @@
     "clean": "rm -rf build",
     "start": "react-scripts start",
     "build": "react-scripts build"
-
   },
   "eslintConfig": {
     "extends": [

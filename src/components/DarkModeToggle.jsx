@@ -4,7 +4,7 @@ import { Sun, Moon } from "lucide-react";
 export default function DarkModeToggle() {
   const [theme, setTheme] = useState(() => {
     if (typeof window !== "undefined") {
-      return localStorage.getItem("theme") || "light";
+      return "light";
     }
     return "light"; // Default theme
   });
