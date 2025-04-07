@@ -128,7 +128,7 @@ const Header = ({ mobileMenuOpen, setMobileMenuOpen }) => {
 
                     {/* Submenu for Service */}
                     {link.submenu && activeSubmenu === index && (
-                      <div className="absolute left-full top-0 bg-white dark:bg-black shadow-lg rounded-lg p-4 z-50 w-max">
+                      <div className="absolute left-full top-[22px] bg-white dark:bg-black shadow-lg rounded-lg p-4 z-50 w-max">
                         <ul className="flex flex-col">
                           {link.submenu.map((submenuCategory, id) => (
                             <li key={id} className="relative group">
