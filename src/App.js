@@ -7,6 +7,11 @@ import usePreventInspect from "./components/usePreventInspect";
 import "./App.css";
 import Loader from "./components/Loader";
 import ContactForm from "./components/ContactForm";
+import DetailPage from "./components/DetailPage";
+import Detail1 from "./components/Detail1";
+import Detail2 from "./components/Detail2";
+import PHPPage from "./components/PHPPage";
+import Gallery from "./components/Gallery";
 
 const Home = lazy(() => import("./page/Home"));
 const About = lazy(() => import("./page/About"));
@@ -34,7 +39,13 @@ function App() {
               <Route path="/company" element={<CompanyPage />} />
               <Route path="/contact" element={<ContactPage />} />
               <Route path="/contactform" element={<ContactForm />} />
-            </Routes>
+              <Route path="/details/:category" element={<DetailPage />} />
+              <Route path="/details1/:category" element={<Detail1 />} />
+              <Route path="/details2/:category" element={<Detail2 />} />
+              <Route path="/PHPpage/:category" element={<PHPPage />} />
+              <Route path="/gallery" element={<Gallery/>} />
+
+              </Routes>
           </Suspense>
           <Footer />
         </div>
