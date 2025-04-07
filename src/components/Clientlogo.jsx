@@ -24,36 +24,36 @@ const Clientlogo = () => {
         {
             Logo: logo5,
         },
-        {
-            Logo: logo1,
-        },
-        {
-            Logo: logo2,
-        },
-        {
-            Logo: logo3,
-        },
-        {
-            Logo: logo4,
-        },
-        {
-            Logo: logo5,
-        },
-        {
-            Logo: logo1,
-        },
-        {
-            Logo: logo2,
-        },
-        {
-            Logo: logo3,
-        },
-        {
-            Logo: logo4,
-        },
-        {
-            Logo: logo5,
-        },
+        // {
+        //     Logo: logo1,
+        // },
+        // {
+        //     Logo: logo2,
+        // },
+        // {
+        //     Logo: logo3,
+        // },
+        // {
+        //     Logo: logo4,
+        // },
+        // {
+        //     Logo: logo5,
+        // },
+        // {
+        //     Logo: logo1,
+        // },
+        // {
+        //     Logo: logo2,
+        // },
+        // {
+        //     Logo: logo3,
+        // },
+        // {
+        //     Logo: logo4,
+        // },
+        // {
+        //     Logo: logo5,
+        // },
     ]
 
     return (
