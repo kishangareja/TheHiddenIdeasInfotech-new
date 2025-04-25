@@ -10,11 +10,11 @@ const Count = () => {
                     <CountUp
                         start={0}
                         end={value}
-                        className="text-white text-[40px] xl:text-[48px] font-bold text-white font-Secondary"
+                        className=" text-[40px] xl:text-[48px] font-bold text-white font-Secondary"
                         duration={2}
                         suffix="+"
                     />
-                    <h6 className='text-[16px] xl:text-[24px] text-white font-Primary font-medium'>{title}</h6>
+                    <h6 className='text-[18px] md:text-[16px] xl:text-[18px] 2xl:text-[20px] 3xl:text-[24px] text-white font-Primary font-medium'>{title}</h6>
                 </div>
             </div>
         );
@@ -23,7 +23,7 @@ const Count = () => {
     const countData = [
         {
             value: 10,
-            title: 'Tech stacks',  // Years Experiance
+            title: 'Tech stacks',
         },
         {
             value: 40,

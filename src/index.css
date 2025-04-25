@@ -8,7 +8,7 @@
 @layer utilities {
  
   ::-webkit-scrollbar {
-    width: 15px;
+    width: 12px;
   }
   ::-webkit-scrollbar-track {
     background: #ffffff;

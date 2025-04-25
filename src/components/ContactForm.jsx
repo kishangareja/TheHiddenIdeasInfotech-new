@@ -49,9 +49,9 @@ const ContactForm = () => {
 
     setFormStatus({ isSubmitting: true, successMessage: "", errorMessage: "" });
 
-   
+    const baseURL = process.env.REACT_APP_API_BASE_URL;
     axios
-    .post("http://localhost:8000/api/contactus", formData, {
+    .post(`${baseURL}contactus`, formData, {
       headers: {
         "Content-Type": "application/json", 
       },
@@ -110,7 +110,6 @@ const ContactForm = () => {
                   onSubmit={handleSubmit}
                   className="flex flex-wrap md:p-[20px] justify-center"
                 >
-                  {/* Your Name */}
                   <div className="w-full md:w-6/12 md:px-[10px] py-[20px] wow animate__animated animate__zoomIn">
                     <label className="font-Secondary">
                       Your Name <span className="text-[#0073e9]">*</span>
@@ -127,7 +126,6 @@ const ContactForm = () => {
                     />
                   </div>
 
-                  {/* Your Email */}
                   <div className="w-full md:w-6/12 md:px-[10px] py-[20px] wow animate__animated animate__zoomIn">
                     <label className="font-Secondary">
                       Your Email <span className="text-[#0073e9]">*</span>
@@ -147,7 +145,6 @@ const ContactForm = () => {
                     )}
                   </div>
 
-                  {/* Phone Number */}
                   <div className="w-full md:w-6/12 md:px-[10px] py-[20px] wow animate__animated animate__zoomIn">
                     <label className="font-Secondary">
                       Your Phone Number
@@ -168,7 +165,6 @@ const ContactForm = () => {
                     )}
                   </div>
 
-                  {/* Your Services */}
                   <div className="w-full md:w-6/12 md:px-[10px] py-[20px] wow animate__animated animate__zoomIn">
                     <label className="font-Secondary">
                       Your Services <span className="text-[#0073e9]">*</span>
@@ -189,7 +185,6 @@ const ContactForm = () => {
                     </select>
                   </div>
 
-                  {/* Your Message */}
                   <div className="w-full md:px-[10px] py-[20px] wow animate__animated animate__zoomIn">
                     <label className="font-Secondary">
                       Your Message <span className="text-[#0073e9]">*</span>
@@ -207,7 +202,6 @@ const ContactForm = () => {
                     ></textarea>
                   </div>
 
-                  {/* Submit Button */}
                   <div className="pt-[20px] wow animate__animated animate__zoomIn">
                     <button
                       type="submit"

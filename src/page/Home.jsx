@@ -1,6 +1,5 @@
 import React from 'react'
 import Banner from '../components/Banner'
-import Test from '../components/test'
 import AboutUs from '../components/AboutUs'
 import Service from '../components/Service'
 import Logoslide from '../components/Logoslide'
@@ -24,7 +23,6 @@ const Home = () => {
         <Choose />  
         <Testimonial />   
         <Clientlogo />  
-        {/* <Test /> */}
       </div>
     </>
   )

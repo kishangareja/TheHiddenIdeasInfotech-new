@@ -46,10 +46,8 @@ const Footer = () => {
             <footer className="pt-[60px] xl:pt-[100px] bg-[#1173b942]">
                 <div className="container">
                     <div className="row">
-                        {/* Footer Top Section */}
-                        <div className="footer_top flex flex-wrap xl:flex-nowrap xl:gap-[30px] w-full lg:ps-[100px] lg:pr-[60px]">
-                            {/* Left Column (Company Info) */}
-                            <div className="w-full md:w-6/12 xl:w-2/12 3xl:w-6/12 flex md:flex-col gap-[30px] pb-[50px] md:pb-[30px]">
+                        <div className=" footer_top flex flex-wrap  xl:flex-nowrap  3xl:gap-[30px] w-full 3xl:ps-[100px] 3xl:pr-[60px]">
+                            <div className="w-full md:w-6/12 xl:w-6/12 flex md:flex-col gap-[30px] pb-[50px] md:pb-[30px]">
                                 <div className="px-[10px] xl:px-0">
                                     <div className='cursor-custom dark:cursor-custom_light pb-[30px] lg:pb-[40px] flex justify-center md:justify-start wow animate__animated animate__zoomIn'>
                                         <Link to="/" className='cursor-custom' onClick={() => window.scrollTo(0, 0)}>
@@ -65,11 +63,11 @@ const Footer = () => {
                                         </li>
                                         <li className='flex items-center justify-center md:justify-start gap-5 wow animate__animated animate__zoomIn'>
                                             <TbPhoneCall className='text-[26px]' />
-                                            <div className='flex flex-col md:flex-row md:gap-5 gap-2'>
+                                            <div className='flex flex-col md:flex-row md:gap-0 gap-2'>
                                                 <Link to={'tel:9687311505'} className='cursor-custom font-Secondary font-medium text-[16px] 2xl:text-[18px] 3xl:text-[20px] tracking-wider'>
                                                     +91 96873 11505
                                                 </Link>
-                                                <span className='hidden md:block'>|</span> {/* Hide "|" on mobile screens */}
+                                                <span className='hidden md:block px-1'>|</span>
                                                 <Link to={'tel:8200113410'} className='cursor-custom font-Secondary font-medium text-[16px] 2xl:text-[18px] 3xl:text-[20px] tracking-wider'>
                                                     +91 82001 13410
                                                 </Link>
@@ -86,7 +84,6 @@ const Footer = () => {
                                     </ul>
                                 </div>
                             </div>
-
                             <div className="w-full md:w-6/12 xl:w-2/12 pb-[50px] md:pb-[30px] xl:pb-0 py-1">
                                 <div className="flex flex-col gap-[15px] md:gap-[30px] px-[10px] xl:px-0 text-center md:text-start">
                                     <h2 className='uppercase font-Secondary tracking-wider font-semibold text-[24px] 3xl:text-[28px] wow animate__animated animate__zoomIn'>
@@ -107,8 +104,6 @@ const Footer = () => {
                                     </ul>
                                 </div>
                             </div>
-
-                            {/* Right Column (IT Services Links) */}
                             <div className="w-full md:w-6/12 xl:w-2/12 pb-[50px] md:pb-[20px] xl:pb-0">
                                 <div className="flex flex-col gap-[15px] md:gap-[30px] px-[10px] xl:px-0 text-center md:text-start">
                                     <h2 className='uppercase font-Secondary tracking-wider font-semibold text-[24px] 3xl:text-[28px] wow animate__animated animate__zoomIn'>
@@ -128,8 +123,6 @@ const Footer = () => {
                                     </ul>
                                 </div>
                             </div>
-
-                            {/* Newsletter Section */}
                             <div className="w-full md:w-6/12 xl:w-4/12 pb-[50px] md:pb-[20px] xl:pb-0">
                                 <div className="flex flex-col gap-[15px] md:gap-[30px] px-[10px] xl:px-0 text-center md:text-start">
                                     <h2 className='uppercase font-Secondary tracking-wider font-semibold text-[24px] 3xl:text-[28px] wow animate__animated animate__zoomIn'>
@@ -149,16 +142,9 @@ const Footer = () => {
                                     </div>
                                 </div>
                             </div>
-
-
-
-
                         </div>
-
                     </div>
-
                 </div>
-
 
                 <div className="footer_bottom py-[30px] flex flex-wrap md:flex-nowrap justify-center md:justify-between items-center px-[30px] lg:px-[8px] border-t-[1px] border-dotted border-[#0000005c] lg:ps-[140px] lg:pr-[80px]">
                     <div className="text-[16px] lg:text-[18px] font-Primary font-medium pb-[20px] md:pb-0 text-center  md:text-start wow animate__animated animate__zoomIn">
