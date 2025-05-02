@@ -9,7 +9,7 @@ const WebdevlopmentBanner = () => {
                         <div className="w-full flex ">
                             <div className="w-6/12">
                                 <div className='flex justify-center'>
-                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 500 500" className='w-full lg:w-[450px] xl:w-[550px] 2xl:w-[600px] 3xl:w-[700px] h-full lg:h-[450px] xl:h-[550px] 2xl:h-[600px] 3xl:h-[720px]' fill="enable-background:new 0 0 500 500" >
+                                    <svg xmlns="https://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 500 500" className='w-full lg:w-[450px] xl:w-[550px] 2xl:w-[600px] 3xl:w-[700px] h-full lg:h-[450px] xl:h-[550px] 2xl:h-[600px] 3xl:h-[720px]' fill="enable-background:new 0 0 500 500" >
                                         <g id="Floor">
                                             <path id="Floor_7_" fill="#F5F5F5" d="M112.778,454.08c-75.785-43.755-75.785-114.696,0-158.45s198.658-43.754,274.443,0   s75.785,114.695,0,158.45C311.436,497.835,188.564,497.835,112.778,454.08z" />
                                         </g>
@@ -1101,7 +1101,7 @@ const WebdevlopmentBanner = () => {
                             </div>
                             <div className="w-full">
                                 <div className='flex justify-center'>
-                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 500 500" className='w-full md:w-[400px] lg:w-[500px]   h-full md:h-[400px] lg:h-[500px]' fill="enable-background:new 0 0 500 500" >
+                                    <svg xmlns="https://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 500 500" className='w-full md:w-[400px] lg:w-[500px]   h-full md:h-[400px] lg:h-[500px]' fill="enable-background:new 0 0 500 500" >
                                         <g id="Floor">
                                             <path id="Floor_7_" fill="#F5F5F5" d="M112.778,454.08c-75.785-43.755-75.785-114.696,0-158.45s198.658-43.754,274.443,0   s75.785,114.695,0,158.45C311.436,497.835,188.564,497.835,112.778,454.08z" />
                                         </g>

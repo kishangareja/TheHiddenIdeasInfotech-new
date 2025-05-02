@@ -263,7 +263,7 @@ const Banner = () => {
               </div>
               <div className="Banner_svg w-full lg:w-6/12 flex justify-end wow animate__animated animate__zoomIn">
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns="https://www.w3.org/2000/svg"
                   viewBox="0 0 500 500"
                   fill="enable-background:new 0 0 500 500"
                   className="w-full lg:w-[450px] xl:w-[550px] 2xl:w-[700px] h-full lg:h-[450px] xl:h-[550px] 2xl:h-[700px]"

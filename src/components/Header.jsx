@@ -31,7 +31,7 @@ const navLinks = [
       },
       {
         name: "PHP Developers",
-        link: "/PHPpage/php-page",
+        link: "/phpdevlopmentpage",
         items: [
           { name: "Laravel", link: "/details/frameworks/laravel" },
           { name: "CodeIgniter", link: "/details/frameworks/mysql" },
@@ -68,10 +68,6 @@ const navLinks = [
   {
     name: "Company",
     path: "/company",
-  },
-  {
-    name: "Contact",
-    path: "/contact",
   },
 ];
 
@@ -116,7 +112,7 @@ const Header = ({ mobileMenuOpen, setMobileMenuOpen }) => {
             <img src={Logo} alt="Logo" className="h-10 sm:h-[50px] md:h-[50px] xl:h-[65px]" />
           </Link>
 
-          <div className="lg:w-[85%] xl:w-[79%] 2xl:w-[78%] 3xl:w-[70%] justify-between hidden lg:flex items-center">
+          <div className="lg:w-[85%] xl:w-[79%] 2xl:w-[78%] 3xl:w-[66%] justify-between hidden lg:flex items-center">
             <nav className={`${mobileMenuOpen ? "block" : "hidden"} lg:flex lg:items-center lg:space-x-6 transition-all duration-300 ease-in-out`}>
               <ul className="flex flex-col lg:flex-row">
                 {navLinks.map((link, index) => (
@@ -178,11 +174,11 @@ const Header = ({ mobileMenuOpen, setMobileMenuOpen }) => {
 
             <div className="flex gap-[10px] items-center">
               <DarkModeToggle />
-              <button onClick={handleContactClick} className="cursor-custom dark:cursor-custom_light relative flex items-center justify-center xl:justify-start group overflow-hidden py-2 sm:py-3 px-3 sm:px-6 font-Secondary text-Primary text-[14px] sm:text-[16px] rounded-lg
+              <a href="/contact" className="cursor-custom dark:cursor-custom_light relative flex items-center justify-center xl:justify-start group overflow-hidden py-2 sm:py-3 px-3 sm:px-6 font-Secondary text-Primary text-[14px] sm:text-[16px] rounded-lg
                    hover:bg-primary-dark uppercase font-semibold border-[3px] border-Primary tracking-wider transition-all duration-[0.7s] bg-white hover:border-[3px]">
                 Contact Us
                 <span className="absolute inset-0 w-[300px] h-[200px] bg-Primary group-hover:left-[130%] group-hover:top-[130%] transition-all duration-500 ease-out rotate-[25deg] left-[-320px] top-[-150px]"></span>
-              </button>
+              </a>
             </div>
           </div>
 

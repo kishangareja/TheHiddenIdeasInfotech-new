@@ -20,7 +20,7 @@ const ContactUs = () => {
                                 <p className='text-[16px] sm:text-[18px] md:text-[20px] font-Secondary wow animate__animated animate__zoomIn'>We’d love to hear from you! Whether it’s a question, feedback, or collaboration opportunity, drop us a message and we’ll respond shortly</p>
                             </div>
                             <div className="w-full xl:w-6/12 flex justify-center xl:justify-end 2xl:justify-center wow animate__animated animate__zoomIn">
-                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                <svg version="1.1" xmlns="https://www.w3.org/2000/svg" x="0px" y="0px"
                                     viewBox="0 0 500 500" fill="enable-background:new 0 0 500 500" className='w-full lg:w-[600px] xl:w-[550px] 2xl:w-[600px] 3xl:w-[700px] h-full lg:h-[500px] xl:h-[550px] 2xl:h-[600px] 3xl:h-[720px]'>
                                     <g id="Floor">
                                         <ellipse fill="#F5F5F5" cx="250" cy="377.348" rx="197.05" ry="111.936" />

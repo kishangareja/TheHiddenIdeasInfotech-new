@@ -16,7 +16,7 @@ const Company = () => {
 					<div className="row">
 						<div className="w-full flex flex-wrap">
 							<div className="w-full xl:w-6/12 flex justify-center xl:justify-start 2xl:justify-center wow animate__animated animate__zoomIn">
-								<svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+								<svg version="1.1" xmlns="https://www.w3.org/2000/svg" x="0px" y="0px"
 									viewBox="0 0 500 500" fill="enable-background:new 0 0 500 500" className='w-full lg:w-[600px] xl:w-[550px] 2xl:w-[600px] 3xl:w-[700px] h-full lg:h-[500px] xl:h-[550px] 2xl:h-[600px] 3xl:h-[720px]'>
 									<g id="Floor"><g id="Floor_00000154384299830099031120000014950105433350166939_"><ellipse fill="#1173b954" cx="250" cy="355.58" rx="242.749" ry="140.152"></ellipse></g></g>
 									<g id="Shadows">
@@ -7358,7 +7358,7 @@ const Company = () => {
 								<p className='text-[16px] sm:text-[18px] md:text-[20px] font-Secondary wow animate__animated animate__zoomIn'>At The Hidden Idea, we believe that every great idea deserves to be brought to life with precision and expertise.  Our expert team combines creative vision with technicalknow.From the first spark of creativity to the final, polished product, our team of engineers, designers, and strategists work together to deliver cutting-edge solutions that align with your unique vision. With a focus on both the creative and technical aspects of every project, we ensure that your goals are not only achieved but surpassed, paving the way for long-term success and growth.</p>
 							</div>
 							<div className="w-full xl:w-6/12 flex justify-center xl:justify-start 2xl:justify-center wow animate__animated animate__zoomIn">
-								<svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+								<svg version="1.1" xmlns="https://www.w3.org/2000/svg" x="0px" y="0px"
 									viewBox="0 0 500 500" fill="enable-background:new 0 0 500 500" className='w-full lg:w-[600px] xl:w-[550px] 2xl:w-[600px] 3xl:w-[700px] h-full lg:h-[500px] xl:h-[550px] 2xl:h-[600px] 3xl:h-[720px]'>
 									<g id="Floor"><g id="Floor_00000154384299830099031120000014950105433350166939_"><ellipse fill="#1173b954" cx="250" cy="355.58" rx="242.749" ry="140.152"></ellipse></g></g>
 									<g id="Shadows">

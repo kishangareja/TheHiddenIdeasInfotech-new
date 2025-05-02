@@ -3,7 +3,7 @@ import React from 'react'
 const Laravel = () => {
   return (
     <>
-        <section>
+        <section className='py-[100px]'>
             <div className="container">
                 <div className="row">
                     

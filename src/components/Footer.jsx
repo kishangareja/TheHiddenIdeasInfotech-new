@@ -35,10 +35,10 @@ const Footer = () => {
     ];
 
     const socialLink = [
-        { icon: <RiFacebookFill />, path: "/facebook" },
-        { icon: <BiLogoLinkedin />, path: "/linkdin" },
-        { icon: <BiLogoInstagramAlt />, path: "/instagram" },
-        { icon: <BiLogoSkype />, path: "skype:live:.cid.981927945f0b7178?chat" },
+        { icon: <RiFacebookFill />, path: "javascript:void(0);" },
+        { icon: <BiLogoLinkedin />, path: "javascript:void(0);" },
+        { icon: <BiLogoInstagramAlt />, path: "javascript:void(0);" },
+        { icon: <BiLogoSkype />, path: "javascript:void(0);" },
     ];
 
     return (
@@ -58,7 +58,7 @@ const Footer = () => {
                                         <li className='flex items-center justify-center md:justify-start wow animate__animated animate__zoomIn'>
                                             <img src={location} alt="Location" className='w-[25px] h-[25px]' />
                                             <p className='ps-[10px] font-Secondary font-medium text-[16px] 2xl:text-[18px] 3xl:text-[20px] tracking-wider text-center md:text-start'>
-                                                235,Golden Square near Dmart mota varachha, surat, Gujarat 394105
+                                                303-304, Golden Square near Dmart mota varachha, surat, Gujarat 394105
                                             </p>
                                         </li>
                                         <li className='flex items-center justify-center md:justify-start gap-5 wow animate__animated animate__zoomIn'>
@@ -170,12 +170,12 @@ const Footer = () => {
                     </ul>
 
                 </div>
-                <ScrollToTop color='white' className='bg-Primary animate-bounce'
+                <ScrollToTop color='white' className='bg-Primary'
                     smooth
                     style={{
                         background: '#1173b9ee',
                         fill: 'white',
-                        borderRadius: '50%',
+                        borderRadius: '10%',
                         width: '40px',
                         height: '40px',
                         justifyItems: 'center',

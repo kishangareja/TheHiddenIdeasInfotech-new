@@ -33,7 +33,7 @@ const Directors = () => {
     {
       image: person2,
       name: "Jay Vaghela",
-      role: "CEO",
+      role: "CTO",
     },
   ];
 

@@ -1,4 +1,5 @@
 import { useState, useRef } from "react";
+import success from "../assets/success.png"
 import axios from "axios";
 
 const ContactForm = () => {
@@ -66,7 +67,7 @@ const ContactForm = () => {
       });
       setFormStatus({
         isSubmitting: false,
-        successMessage: "Message sent successfully!",
+        successMessage: "Our team will contact you soon..!",
         errorMessage: "",
       });
       setShowModal(true);
@@ -236,6 +237,9 @@ const ContactForm = () => {
               )}
               {formStatus.successMessage && (
                 <div className="text-green-600 font-bold font-Secondary text-[14px] sm:text-xl">
+                  <div className="image flex justify-center mb-4">
+                    <img src={success} alt="suucess_image" className="w-10 h-10"/>
+                  </div>
                   {formStatus.successMessage}
                 </div>
               )}
