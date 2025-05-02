@@ -4,7 +4,6 @@ import { TbPhoneCall, TbClockHour4 } from "react-icons/tb";
 import { RiFacebookFill } from "react-icons/ri";
 import { BiLogoLinkedin, BiLogoInstagramAlt, BiLogoSkype } from "react-icons/bi";
 import { Link, NavLink, useNavigate } from 'react-router-dom';
-import { FaChevronCircleUp } from "react-icons/fa";
 import ScrollToTop from "react-scroll-to-top";
 
 const Footer = () => {
@@ -35,10 +34,10 @@ const Footer = () => {
     ];
 
     const socialLink = [
-        { icon: <RiFacebookFill />, path: "javascript:void(0);" },
-        { icon: <BiLogoLinkedin />, path: "javascript:void(0);" },
-        { icon: <BiLogoInstagramAlt />, path: "javascript:void(0);" },
-        { icon: <BiLogoSkype />, path: "javascript:void(0);" },
+        { icon: <RiFacebookFill />, path: "#" },
+        { icon: <BiLogoLinkedin />, path: "#" },
+        { icon: <BiLogoInstagramAlt />, path: "#" },
+        { icon: <BiLogoSkype />, path: "#" },
     ];
 
     return (
