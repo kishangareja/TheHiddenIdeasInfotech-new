@@ -21,7 +21,7 @@ const navLinks = [
     submenu: [
       {
         name: "Web Development",
-        link: "/webdevlopmentpage", 
+        link: "/webdevlopmentpage",
         items: [
           { name: "React", link: "/webdevlopmentpage/react" },
           { name: "Angular", link: "/webdevlopmentpage/angular" },
@@ -30,33 +30,33 @@ const navLinks = [
         ],
       },
       {
-        name: "Front End",
-        link: "/details2/front-end", 
-        items: [
-          { name: "HTML", link: "/details/back-end/html" },
-          { name: "Css", link: "/details/back-end/css" },
-          { name: "Javascript", link: "/details/back-end/javascript" },
-          { name: "Bootstrap", link: "/details/back-end/bootstrap" },
-        ],
-      },
-      {
         name: "PHP Developers",
-        link: "/PHPpage/php-page", 
+        link: "/PHPpage/php-page",
         items: [
-          { name: "My SQL", link: "/details/frameworks/mysql" },
           { name: "Laravel", link: "/details/frameworks/laravel" },
+          { name: "CodeIgniter", link: "/details/frameworks/mysql" },
           { name: "Cake Php", link: "/details/frameworks/cake-php" },
-          { name: "SQLite", link: "/details/frameworks/sqlite" },
+          { name: "Symfony", link: "/details/frameworks/cake-php" },
         ],
       },
       {
         name: "Mobile App Development",
-        link: "/details1/mobile-app-development", 
+        link: "/details1/mobile-app-development",
         items: [
           { name: "React Native", link: "/detail1/mobile-app-development/react-native" },
           { name: "Flutter", link: "/detail1/mobile-app-development/flutter" },
           { name: "Android", link: "/detail1/mobile-app-development/android" },
           { name: "iOS", link: "/detail1/mobile-app-development/ios" },
+        ],
+      },
+      {
+        name: "DataBase",
+        link: "/PHPpage/php-page",
+        items: [
+          { name: "SQLite", link: "/details/frameworks/laravel" },
+          { name: "My SQL", link: "/details/frameworks/mysql" },
+          { name: "PostgreSQL", link: "/details/frameworks/cake-php" },
+          { name: "MariaDB", link: "/details/frameworks/cake-php" },
         ],
       },
     ],
@@ -76,7 +76,7 @@ const navLinks = [
 ];
 
 const Header = ({ mobileMenuOpen, setMobileMenuOpen }) => {
-  const [activeSubmenu, setActiveSubmenu] = useState(null); 
+  const [activeSubmenu, setActiveSubmenu] = useState(null);
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -92,11 +92,11 @@ const Header = ({ mobileMenuOpen, setMobileMenuOpen }) => {
   };
 
   const handleServiceHover = (index) => {
-    setActiveSubmenu(index); 
+    setActiveSubmenu(index);
   };
 
   const handleServiceLeave = () => {
-    setActiveSubmenu(null); 
+    setActiveSubmenu(null);
   };
 
   const isServiceSubmenuActive =
@@ -109,7 +109,7 @@ const Header = ({ mobileMenuOpen, setMobileMenuOpen }) => {
       );
 
   return (
-<header className={`p-4 bg-white dark:bg-black duration-700 shadow-xl ${mobileMenuOpen ? "shadow-none" : "shadow-xl dark:shadow-customTwo"} sticky top-0 z-50 animate-slideDown`}>
+    <header className={`p-4 bg-white dark:bg-black duration-700 shadow-xl ${mobileMenuOpen ? "shadow-none" : "shadow-xl dark:shadow-customTwo"} sticky top-0 z-50 animate-slideDown`}>
       <div className="container xl:mx-auto">
         <div className="flex items-center justify-between">
           <Link to="/" className="cursor-pointer" onClick={() => window.scrollTo(0, 0)}>
@@ -129,10 +129,9 @@ const Header = ({ mobileMenuOpen, setMobileMenuOpen }) => {
                     <NavLink
                       to={link.path || "#"}
                       className={({ isActive }) =>
-                        `cursor-custom dark:cursor-custom_light uppercase font-semibold text-[16px] 2xl:text-[18px] font-Secondary tracking-widest duration-200 ${
-                          isActive || (link.name === "Service" && isServiceSubmenuActive)
-                            ? "text-Primary dark:text-Primary"
-                            : "text-gray-700 dark:text-white"
+                        `cursor-custom dark:cursor-custom_light uppercase font-semibold text-[16px] 2xl:text-[18px] font-Secondary tracking-widest duration-200 ${isActive || (link.name === "Service" && isServiceSubmenuActive)
+                          ? "text-Primary dark:text-Primary"
+                          : "text-gray-700 dark:text-white"
                         } hover:text-Primary dark:hover:text-Primary`
                       }
                       onClick={() => window.scrollTo(0, 0)}

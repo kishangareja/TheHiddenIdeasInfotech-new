@@ -64,11 +64,11 @@ const Footer = () => {
                                         <li className='flex items-center justify-center md:justify-start gap-5 wow animate__animated animate__zoomIn'>
                                             <TbPhoneCall className='text-[26px]' />
                                             <div className='flex flex-col md:flex-row md:gap-0 gap-2'>
-                                                <Link to={'tel:9687311505'} className='cursor-custom font-Secondary font-medium text-[16px] 2xl:text-[18px] 3xl:text-[20px] tracking-wider'>
+                                                <Link to={'tel:9687311505'} className='cursor-custom font-Secondary font-medium text-[16px] 2xl:text-[18px] 3xl:text-[20px] tracking-wider transition-all duration-100 hover:text-Primary'>
                                                     +91 96873 11505
                                                 </Link>
                                                 <span className='hidden md:block px-1'>|</span>
-                                                <Link to={'tel:8200113410'} className='cursor-custom font-Secondary font-medium text-[16px] 2xl:text-[18px] 3xl:text-[20px] tracking-wider'>
+                                                <Link to={'tel:8200113410'} className='cursor-custom font-Secondary font-medium text-[16px] 2xl:text-[18px] 3xl:text-[20px] tracking-wider transition-all duration-100 hover:text-Primary'>
                                                     +91 82001 13410
                                                 </Link>
                                             </div>

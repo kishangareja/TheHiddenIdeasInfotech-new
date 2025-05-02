@@ -1,42 +1,50 @@
-import { useState, Suspense, lazy } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useState, useEffect, Suspense, lazy } from "react";
+import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
-import usePreventInspect from "./components/usePreventInspect";
+// import usePreventInspect from "./components/usePreventInspect";
 import "./App.css";
 import Loader from "./components/Loader";
 import ContactForm from "./components/ContactForm";
-// import DetailPage from "./components/DetailPage";
-// import Detail1 from "./components/Detail1";
-// import Detail2 from "./components/Detail2";
-// import PHPPage from "./components/PHPPage";
-import Gallery from "./components/Gallery";
+import Gallery from "./page/Gallery";
 import WebdevlopmentPage from "./page/WebdevlopmentPage";
 import ReactTexhnology from "./components/TechnologyWeb";
 import AngularTechnology from "./components/AngularTechnology";
 import NextjsTechnology from "./components/NextjsTechnology";
 import VueTechnology from "./components/VueTechnology";
 
-const Home = lazy(() => import("./page/Home"));
-const About = lazy(() => import("./page/About"));
-const ServicePage = lazy(() => import("./page/ServicePage"));
-const CompanyPage = lazy(() => import("./page/CompanyPage"));
-const ContactPage = lazy(() => import("./page/ContactPage"));
+import Home from "./page/Home";
+import About from "./page/About";
+import ServicePage from "./page/ServicePage";
+import CompanyPage from "./page/CompanyPage";
+import ContactPage from "./page/ContactPage";
+import Detail2 from "./components/Detail2";
+import Phpdevlopmentpage from "./page/Phpdevlopmentpage";
 
 function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [loading, setLoading] = useState(true);
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+    return () => clearTimeout(timer);
+  }, []);
 
   // usePreventInspect();
 
   return (
     <>
-      <div>
-        <ScrollToTop />
-        <Header mobileMenuOpen={mobileMenuOpen} setMobileMenuOpen={setMobileMenuOpen} />
-        <div className={`${mobileMenuOpen ? 'blur-background' : ''}`}>
-          <Suspense fallback={<Loader />}>
+
+      {loading ? (
+        <Loader />
+      ) : (
+        <>
+          <ScrollToTop />
+          <Header mobileMenuOpen={mobileMenuOpen} setMobileMenuOpen={setMobileMenuOpen} />
+          <div className={`${mobileMenuOpen ? 'blur-background' : ''}`}>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
@@ -48,13 +56,15 @@ function App() {
               <Route path="/webdevlopmentpage/angular" element={<AngularTechnology />} />
               <Route path="/webdevlopmentpage/nextjs" element={<NextjsTechnology />} />
               <Route path="/webdevlopmentpage/vue" element={<VueTechnology />} />
+              <Route path="/frontedpage/detail" element={<Detail2 />} />
               <Route path="/gallery" element={<Gallery />} />
               <Route path="/webdevlopmentpage" element={<WebdevlopmentPage />} />
+              <Route path="/phpdevlopmentpage" element={<Phpdevlopmentpage />} />
             </Routes>
-          </Suspense>
-          <Footer />
-        </div>
-      </div>
+            <Footer />
+          </div>
+        </>
+      )}
     </>
   );
 }
