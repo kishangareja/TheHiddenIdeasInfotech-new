@@ -5,6 +5,7 @@ import { RiFacebookFill } from "react-icons/ri";
 import { BiLogoLinkedin, BiLogoInstagramAlt, BiLogoSkype } from "react-icons/bi";
 import { Link, NavLink, useNavigate } from 'react-router-dom';
 import ScrollToTop from "react-scroll-to-top";
+import { BsMicrosoftTeams } from "react-icons/bs";
 
 const Footer = () => {
 
@@ -37,7 +38,7 @@ const Footer = () => {
         { icon: <RiFacebookFill />, path: "#" },
         { icon: <BiLogoLinkedin />, path: "#" },
         { icon: <BiLogoInstagramAlt />, path: "#" },
-        { icon: <BiLogoSkype />, path: "#" },
+        { icon: <BsMicrosoftTeams />, path: "#" },
     ];
 
     return (

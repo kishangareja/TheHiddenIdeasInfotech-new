@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg preserveAspectRatio="xMidYMid" version="1.1" viewBox="0 0 256 317" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="a" x1="3.9517%" x2="75.897%" y1="26.993%" y2="52.919%">
+<stop offset="0"/>
+<stop stop-opacity="0" offset="1"/>
+</linearGradient>
+</defs>
+<polygon points="157.67 5.4936e-4 5.4936e-4 157.67 48.801 206.47 255.27 5.4936e-4" fill="#47C5FB"/>
+<polygon points="156.57 145.4 72.149 229.82 121.13 279.53 169.84 230.82 255.27 145.4" fill="#47C5FB"/>
+<polygon points="121.13 279.53 158.21 316.61 255.27 316.61 169.84 230.82" fill="#00569E"/>
+<polygon points="71.6 230.36 120.4 181.56 169.84 230.82 121.13 279.53" fill="#00B5F8"/>
+<polygon points="121.13 279.53 161.69 266.07 165.72 234.94" fill="url(#a)" fill-opacity=".8"/>
+</svg>

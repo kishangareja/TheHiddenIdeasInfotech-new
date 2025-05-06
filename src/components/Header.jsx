@@ -33,30 +33,30 @@ const navLinks = [
         name: "PHP Developers",
         link: "/phpdevlopmentpage",
         items: [
-          { name: "Laravel", link: "/details/frameworks/laravel" },
-          { name: "CodeIgniter", link: "/details/frameworks/mysql" },
-          { name: "Cake Php", link: "/details/frameworks/cake-php" },
-          { name: "Symfony", link: "/details/frameworks/cake-php" },
+          { name: "Laravel", link: "/phpdevlopmentpage/laravel" },
+          { name: "CodeIgniter", link: "/phpdevlopmentpage/codeigniter" },
+          { name: "Cake Php", link: "/phpdevlopmentpage/cake-php" },
+          { name: "Symfony", link: "/phpdevlopmentpage/symfony" },
         ],
       },
       {
         name: "Mobile App Development",
-        link: "/details1/mobile-app-development",
+        link: "/appdevlopmentpage",
         items: [
-          { name: "React Native", link: "/detail1/mobile-app-development/react-native" },
-          { name: "Flutter", link: "/detail1/mobile-app-development/flutter" },
-          { name: "Android", link: "/detail1/mobile-app-development/android" },
-          { name: "iOS", link: "/detail1/mobile-app-development/ios" },
+          { name: "React Native", link: "/appdevlopmentpage/reactnative" },
+          { name: "Flutter", link: "/appdevlopmentpage/flutter" },
+          { name: "Android", link: "/appdevlopmentpage/android" },
+          { name: "iOS", link: "/appdevlopmentpage/ios" },
         ],
       },
       {
         name: "DataBase",
-        link: "/PHPpage/php-page",
+        link: "/databasepage",
         items: [
-          { name: "SQLite", link: "/details/frameworks/laravel" },
-          { name: "My SQL", link: "/details/frameworks/mysql" },
-          { name: "PostgreSQL", link: "/details/frameworks/cake-php" },
-          { name: "MariaDB", link: "/details/frameworks/cake-php" },
+          { name: "My SQL", link: "/databasepage/mysql" },
+          { name: "MariaDB", link: "/databasepage/mariadb" },
+          { name: "SQLite", link: "/databasepage/sqlite" },
+          { name: "PostgreSQL", link: "/databasepage/postgresql" },
         ],
       },
     ],
@@ -171,7 +171,6 @@ const Header = ({ mobileMenuOpen, setMobileMenuOpen }) => {
                 ))}
               </ul>
             </nav>
-
             <div className="flex gap-[10px] items-center">
               <DarkModeToggle />
               <a href="/contact" className="cursor-custom dark:cursor-custom_light relative flex items-center justify-center xl:justify-start group overflow-hidden py-2 sm:py-3 px-3 sm:px-6 font-Secondary text-Primary text-[14px] sm:text-[16px] rounded-lg
@@ -188,6 +187,28 @@ const Header = ({ mobileMenuOpen, setMobileMenuOpen }) => {
               {mobileMenuOpen ? <CgClose className="text-black dark:text-white" /> : <GiHamburgerMenu className="text-black dark:text-white" />}
             </Link>
           </div>
+        </div>
+      </div>
+      <div
+        className={`duration-500 ${mobileMenuOpen ? "top-[70px]" : "-top-[410px]"} ${mobileMenuOpen ? "top-[70px]" : "-top-[410px]"}
+        ${mobileMenuOpen ? "shadow-lg" : "shadow-none"} absolute left-0 w-full bg-white dark:bg-black transition-all duration-500 ease-in-out block lg:hidden z-[-1] pt[20px] pb-[30px] px-[10px]`}
+      >
+        <ul className="">
+          {navLinks.map((link, index) => (
+            <li key={index} className="text-center px-[10px] py-[20px] uppercase font-semibold text-gray-700 dark:text-white hover:text-Primary dark:hover:text-Primary duration-200 border-b-[1px] border-dotted border-[#0000003d]">
+              <NavLink to={link.path || "#"} className={({ isActive }) => ` ${isActive ? "text-Primary" : ""} `} onClick={() => {
+                setMobileMenuOpen(false);
+                window.scrollTo(0, 0);
+              }}>{link.name}</NavLink>
+            </li>
+          ))}
+        </ul>
+
+        <div className="flex justify-center pt-[30px]">
+          <button onClick={handleContactClick} class="relative flex items-center justify-center xl:justify-start   group  overflow-hidden py-2 sm:py-3 px-3 sm:px-6 font-Secondary text-Primary text-[14px] sm:text-[16px] rounded-lg hover:bg-primary-dark uppercase font-semibold border-[3px] border-Primary tracking-wider transition-all duration-[0.5s] bg-white  hover:border-[3px]">
+            Contact Us
+            <span class="absolute inset-0 w-[300px] h-[200px] bg-Primary group-hover:left-[130%] group-hover:top-[130%] transition-all duration-500 ease-out rotate-[25deg] left-[-320px] top-[-150px]"></span>
+          </button>
         </div>
       </div>
     </header>
