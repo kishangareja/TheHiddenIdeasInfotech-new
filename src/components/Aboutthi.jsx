@@ -20,7 +20,7 @@ const Aboutthi = () => {
                                 <div className="w-full lg:w-6/12 wow animate__animated animate__zoomIn">
                                     <div className="flex p-[20px] xl:p-[40px] border-[4px] lg:border-[0px] lg:border-l-[4px] lg:border-r-[2px] lg:border-b-[4px] border-Primary rounded-xl lg:rounded-b-xl mb-[20px] lg:mb-0">
                                         <div className="pe-[10px] h-fit">
-                                            <img src={idea} alt="" className='w-[140px] sm:w-[100px] 3xl:w-[60px] 3xl:h-[35px]' />
+                                            <img src={idea} alt={idea} className='w-[140px] sm:w-[100px] 3xl:w-[60px] 3xl:h-[35px]' />
                                         </div>
                                         <div className="content">
                                             <h3 className='text-[20px] sm:text-[24px] md:text-[26px] font-Secondary font-medium'>Empowering Your Vision</h3>
@@ -31,7 +31,7 @@ const Aboutthi = () => {
                                 <div className="w-full lg:w-6/12 wow animate__animated animate__zoomIn">
                                     <div className="flex p-[20px] xl:p-[40px] border-[4px] lg:border-[0px] lg:border-r-[4px] lg:border-l-[2px] lg:border-b-[4px] border-Primary rounded-xl lg:rounded-b-xl">
                                         <div className="pe-[10px] h-fit">
-                                            <img src={rocket} alt="" className='w-[140px] sm:w-[100px] 3xl:w-[60px] 3xl:h-[35px]'/>
+                                            <img src={rocket} alt={rocket} className='w-[140px] sm:w-[100px] 3xl:w-[60px] 3xl:h-[35px]'/>
                                         </div>
                                         <div className="content">
                                             <h3  className='text-[20px] sm:text-[24px] md:text-[26px] font-Secondary font-medium'>Creating Tomorrow, Today</h3>

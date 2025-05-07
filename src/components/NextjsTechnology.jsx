@@ -25,7 +25,7 @@ const NextjsTechnology = () => {
                                 </div>
                                 <div className="w-full lg:w-6/12 flex items-center justify-center">
                                     <div className="image flex justify-center">
-                                        <img src={nextjsmain} alt="" className='w-[200px] md:w-[300px] 3xl:w-[400px] h-[200px] md:h-[300px] 3xl:h-[400px]' />
+                                        <img src={nextjsmain} alt={nextjsmain} className='w-[200px] md:w-[300px] 3xl:w-[400px] h-[200px] md:h-[300px] 3xl:h-[400px]' />
                                     </div>
                                 </div>
                             </div>

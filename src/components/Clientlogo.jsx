@@ -84,7 +84,7 @@ const Clientlogo = () => {
                             </Marquee>
                         </div>
                         <div className="logo_thumb absolute w-[5%] left-[30px] top-[30px] animate-moveLeftBounce" >
-                            <img src={logo} alt="" className='opacity-[0.5]' />
+                            <img src={logo} alt={logo} className='opacity-[0.5]' />
                         </div>
                     </div>
                 </div>

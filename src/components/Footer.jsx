@@ -2,7 +2,7 @@ import logo from '../assets/Logo.png';
 import location from '../assets/location.png';
 import { TbPhoneCall, TbClockHour4 } from "react-icons/tb";
 import { RiFacebookFill } from "react-icons/ri";
-import { BiLogoLinkedin, BiLogoInstagramAlt, BiLogoSkype } from "react-icons/bi";
+import { BiLogoLinkedin, BiLogoInstagramAlt } from "react-icons/bi";
 import { Link, NavLink, useNavigate } from 'react-router-dom';
 import ScrollToTop from "react-scroll-to-top";
 import { BsMicrosoftTeams } from "react-icons/bs";
@@ -21,17 +21,17 @@ const Footer = () => {
     };
 
     const companyLinks = [
-        { id: 1, FLink: 'About', path: "/about" },
-        { id: 2, FLink: 'Service', path: "/service" },
-        { id: 4, FLink: 'Company', path: "/company" },
-        { id: 3, FLink: 'Contact', path: "/contact" },
+        { FLink: 'About', path: "/about" },
+        { FLink: 'Service', path: "/service" },
+        { FLink: 'Company', path: "/company" },
+        { FLink: 'Contact', path: "/contact" },
     ];
 
     const serviceLinks = [
-        { id: 6, FLink: 'Front End' },
-        { id: 7, FLink: 'Back End' },
-        { id: 8, FLink: 'Frameworks' },
-        { id: 9, FLink: 'Mobile' },
+        { FLink: 'Web Development', path: "/webdevlopmentpage" },
+        { FLink: 'PHP Developers', path: "/phpdevlopmentpage" },
+        { FLink: 'App Development', path: "/appdevlopmentpage" },
+        { FLink: 'DataBase', path: "/databasepage" },
     ];
 
     const socialLink = [
@@ -93,8 +93,8 @@ const Footer = () => {
                                         {companyLinks.map((companyLink, id) => (
                                             <li key={id} className='wow animate__animated animate__zoomIn'>
                                                 <NavLink
-                                                    to={companyLink.path || "#"}
-                                                    className={({ isActive }) => `cursor-custom uppercase font-semibold text-[16px] 2xl:text-[18px] 3xl:text-[20px] font-Secondary tracking-widest duration-200 ${isActive ? "text-Primary" : "text-gray-700"} hover:text-Primary`}
+                                                    to={companyLink.path}
+                                                    className={({ isActive }) => `cursor-custom uppercase font-semibold text-[16px] 2xl:text-[18px] 3xl:text-[20px] font-Secondary tracking-wider duration-200 ${isActive ? "text-Primary" : "text-gray-700"} hover:text-Primary`}
                                                     onClick={() => window.scrollTo(0, 0)}
                                                 >
                                                     {companyLink.FLink}
@@ -110,10 +110,11 @@ const Footer = () => {
                                         IT Services
                                     </h2>
                                     <ul className='flex flex-col gap-[10px] md:gap-[20px]'>
-                                        {serviceLinks.map((serviceLink, id) => (
-                                            <li key={id} className='wow animate__animated animate__zoomIn'>
+                                        {serviceLinks.map((serviceLink, index) => (
+                                            <li key={index} className='wow animate__animated animate__zoomIn'>
                                                 <NavLink
-                                                    className={({ isActive }) => `cursor-custom uppercase font-semibold text-[16px] 2xl:text-[18px] 3xl:text-[20px] font-Secondary tracking-widest duration-200 text-[#374151] hover:text-Primary`}
+                                                    to={serviceLink.path}
+                                                    className={({ isActive }) => `cursor-custom uppercase font-semibold text-[16px] 2xl:text-[18px] 3xl:text-[20px] font-Secondary tracking-wider duration-200 text-[#374151] hover:text-Primary`}
                                                     onClick={() => window.scrollTo(0, 0)}
                                                 >
                                                     {serviceLink.FLink}
@@ -133,9 +134,9 @@ const Footer = () => {
                                     </p>
                                     <div className="btn flex justify-center md:justify-start wow animate__animated animate__zoomIn">
                                         <button onClick={handleContactClick} className="cursor-custom relative flex items-center justify-center xl:justify-start  
-                group  overflow-hidden py-2 sm:py-3 px-3 sm:px-6 font-Secondary text-Primary text-[14px] sm:text-[16px] rounded-lg 
-                hover:bg-primary-dark uppercase font-semibold border-[3px]
-                border-Primary tracking-wider transition-all duration-[0.5s] bg-white  hover:border-[3px]">
+                                            group  overflow-hidden py-2 sm:py-3 px-3 sm:px-6 font-Secondary text-Primary text-[14px] sm:text-[16px] rounded-lg 
+                                            hover:bg-primary-dark uppercase font-semibold border-[3px]
+                                            border-Primary tracking-wider transition-all duration-[0.5s] bg-white  hover:border-[3px]">
                                             Get in Touch
                                             <span className="absolute inset-0 w-[300px] h-[200px] bg-Primary group-hover:left-[130%] group-hover:top-[130%] transition-all duration-500 ease-out rotate-[25deg] left-[-320px] top-[-150px]"></span>
                                         </button>
@@ -160,7 +161,7 @@ const Footer = () => {
                                      py-2 sm:py-3 px-3 sm:px-3 font-Secondary text-Primary text-[16px] lg:text-[20px] rounded-lg transition-all duration-500
                                       bg-white border-[3px]
                                      border-Primary uppercase font-semibold tracking-wider
-                    ${isActive ? 'text-Primary bg-Primary border-Primary' : 'text-gray-700'} hover:bg-primary-dark hover:text-white`}
+                                    ${isActive ? 'text-Primary bg-Primary border-Primary' : 'text-gray-700'} hover:bg-primary-dark hover:text-Primary`}
                                 >
                                     {social.icon}
                                     <span className="absolute inset-0 w-[200px] h-[100px] bg-Primary group-hover:left-[130%] group-hover:top-[130%] transition-all duration-500 ease-out rotate-[25deg] left-[-320px] top-[-150px]"></span>

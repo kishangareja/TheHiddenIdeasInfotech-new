@@ -33,7 +33,7 @@ const Gallery = () => {
 
   const handleCategoryClick = (categoryName) => {
     setCategory(categoryName);
-    setShowMore(false);  // Reset show more button when a new category is clicked
+    setShowMore(false); 
   };
 
   const handleLoadMore = () => {
@@ -53,7 +53,7 @@ const Gallery = () => {
                 key={index}
                 type="button"
                 className={`text-slate-500 border border-blue-600 
-                ${category === cat ? 'bg-Primary text-white' : 'bg-white text-slate-500 hover:bg-Primary hover:text-white'}
+                ${category === cat ? 'bg-Primary text-white' : 'bg-white dark:bg-black text-slate-500 hover:bg-Primary hover:text-white'}
                 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-full font-medium px-5 py-2.5 text-center me-3 mb-3`}
                 onClick={() => handleCategoryClick(cat)}
               >
@@ -62,25 +62,20 @@ const Gallery = () => {
             ))}
           </div>
 
-          {/* Images grid */}
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 pt-6">
             {getFilteredImages().map((image, index) => (
               <div key={index} className="relative group">
-                {/* Image */}
                 <img
                   className="h-[450px] w-[600px] rounded-lg transition-all duration-500 group-hover:opacity-70"
                   src={image}
                   alt={`Category ${category}`}
                 />
 
-                {/* Category name overlay on hover */}
                 <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
-                  {/* Category Name Block */}
                   <div className="bg-Primary text-white rounded-lg shadow-2xl px-6 py-3 text-2xl font-bold text-center">
                     <div>{category}</div>
                   </div>
 
-                  {/* Plus and Infinity Signs Below */}
                   <div className="absolute top-80 left-0 w-full flex justify-center space-x-4">
                     <p className="flex items-center justify-center">
                       <span className="text-4xl bg-Primary text-white rounded-full w-12 h-12 flex items-center justify-center">
@@ -98,7 +93,6 @@ const Gallery = () => {
             ))}
           </div>
 
-          {/* Load More button */}
           <div className="flex justify-center mt-6">
             <button
               onClick={handleLoadMore}

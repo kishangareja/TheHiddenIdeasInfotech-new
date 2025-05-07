@@ -220,7 +220,6 @@ const ContactForm = () => {
           </div>
         </div>
 
-        {/* Modal for Success/Failure Messages */}
         {showModal && (
           <div
             className="fixed inset-0 flex justify-center items-center bg-black bg-opacity-40 z-50"

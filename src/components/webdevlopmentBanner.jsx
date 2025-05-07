@@ -1072,8 +1072,8 @@ const WebdevlopmentBanner = () => {
                                 </div>
                             </div>
                             <div className="w-6/12 flex flex-col justify-center">
-                                <h2 className='text-[60px] 3xl:text-[74px] font-semibold font-Secondary'>Web Development</h2>
-                                <p className='text-[20px] font-Primary font-medium'>Being a well-reputed web app development company, we specialize in designing, building, testing, and deploying web-based applications tailored to propel businesses forward. We are globally recognized as top-rated web app development companies in the United States, Europe, Africa, MENA & UAE regions for creating fast and secure web apps using modern programming languages and agile methodologies.</p>
+                                <h2 className='text-[60px] 3xl:text-[74px] font-semibold text-black dark:text-white font-Secondary'>Web Development</h2>
+                                <p className='text-[20px] font-Primary font-medium text-black dark:text-white'>Being a well-reputed web app development company, we specialize in designing, building, testing, and deploying web-based applications tailored to propel businesses forward. We are globally recognized as top-rated web app development companies in the United States, Europe, Africa, MENA & UAE regions for creating fast and secure web apps using modern programming languages and agile methodologies.</p>
                                 <div className="mt-6">
                                     <button className="cursor-custom relative flex items-center justify-center xl:justify-start group  overflow-hidden py-2 sm:py-3 px-3 sm:px-6 font-Secondary text-Primary text-[14px] sm:text-[16px] rounded-lg hover:bg-primary-dark uppercase font-semibold border-[3px] border-Primary tracking-wider transition-all duration-[0.5s] bg-white  hover:border-[3px]">
                                         Any More Web development
@@ -1090,8 +1090,8 @@ const WebdevlopmentBanner = () => {
                     <div className="row">
                         <div className="w-full flex flex-wrap">
                         <div className="w-full flex  flex-col justify-center mb-[30px] text-center">
-                                <h2 className='text-[24px] sm:text-[42px] md:text-[52px] font-semibold font-Secondary'>Web Development</h2>
-                                <p className='text-[14px] sm:text-[16px] md:text-[18px] font-Primary font-medium'>Being a well-reputed web app development company, we specialize in designing, building, testing, and deploying web-based applications tailored to propel businesses forward. We are globally recognized as top-rated web app development companies in the United States, Europe, Africa, MENA & UAE regions for creating fast and secure web apps using modern programming languages and agile methodologies.</p>
+                                <h2 className='text-[24px] sm:text-[42px] md:text-[52px] text-black dark:text-white font-semibold font-Secondary'>Web Development</h2>
+                                <p className='text-[14px] sm:text-[16px] md:text-[18px] text-black dark:text-white font-Primary font-medium'>Being a well-reputed web app development company, we specialize in designing, building, testing, and deploying web-based applications tailored to propel businesses forward. We are globally recognized as top-rated web app development companies in the United States, Europe, Africa, MENA & UAE regions for creating fast and secure web apps using modern programming languages and agile methodologies.</p>
                                 <div className="mt-6 flex justify-center">
                                     <button className="cursor-custom relative flex items-center justify-center xl:justify-start group  overflow-hidden py-2 sm:py-3 px-3 sm:px-6 font-Secondary text-Primary text-[14px] sm:text-[16px] rounded-lg hover:bg-primary-dark uppercase font-semibold border-[3px] border-Primary tracking-wider transition-all duration-[0.5s] bg-white  hover:border-[3px]">
                                         Any More Web development

@@ -17,15 +17,15 @@ const Laravel = () => {
         <div className="container">
           <div className="row">
             <div className="xl:px-[50px] 3xl:px-[150px] mb-[25px] sm:mb-[50px]">
-              <div className="w-full flex bg-[#ff000080] p-5 sm:p-10 rounded-md">
-                <div className="w-full lg:w-6/12">
+              <div className="w-full flex flex-wrap bg-[#ff000080] p-5 sm:p-10 rounded-md">
+                <div className="w-full lg:w-6/12 text-center sm:text-start mb-5 xl:mb-0">
                   <h2 className='text-[20px] sm:text-[26px] xl:text-[30px] 2xl:text-[34px] 3xl:text-[48px] font-Secondary font-medium pb-4 text-white'>Laravel Development</h2>
                   <p className='text-[14px] xl:text-[16px] pb-3 font-Primary text-[#b5b3ad]'>The Hidden ideas Laravel development services allow you to build powerful, secure, and scalable online apps. Our professional developers create high-performance websites with clean code, smooth functionality, and a modern style. Whether you require an eCommerce platform, API development, or a custom web application, we provide specialised solutions that improve the user experience and expand your business.</p>
                   <p className='text-[14px] xl:text-[16px] font-Primary text-[#b5b3ad]'>Laravel strives to provide an amazing developer experience while providing powerful features such as thorough dependency injection, an expressive database abstraction layer, queues and scheduled jobs, unit and integration testing, and more.</p>
                 </div>
-                <div className="w-full lg:w-6/12">
+                <div className="w-full lg:w-6/12 flex items-center justify-center">
                   <div className="image flex justify-center">
-                    <img src={laravel} alt="" className='w-[200px] md:w-[300px] 3xl:w-[400px] h-[200px] md:h-[250px] 3xl:h-[350px]' />
+                    <img src={laravel} alt={laravel} className='w-[200px] md:w-[300px] 3xl:w-[400px] h-[200px] md:h-[250px] 3xl:h-[350px]' />
                   </div>
                 </div>
               </div>

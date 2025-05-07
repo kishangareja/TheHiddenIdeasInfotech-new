@@ -2928,7 +2928,7 @@ const AboutUs = () => {
                                 <ul className='w-full flex gap-[10px]'>
                                     {aboutBox.map((aboutBox, index) => (
                                         <li key={index} className='w-4/12 flex flex-col items-center justify-center h-full py-[35px] px-[25px] bg-white dark:bg-black dark:text-white dark:shadow-chooseBox  rounded-lg wow animate__animated animate__zoomIn'>
-                                            <img src={aboutBox.image} alt="" className='w-[20%] pb-[20px]' />
+                                            <img src={aboutBox.image} alt={aboutBox.image} className='w-[20%] pb-[20px]' />
                                             <h3 className='uppercase font-Secondary'>{aboutBox.title}</h3>
                                         </li>
                                     ))}
@@ -2951,7 +2951,7 @@ const AboutUs = () => {
                                 <ul className='w-full flex gap-[10px]'>
                                     {aboutBox.map((aboutBox, index) => (
                                         <li key={index} className='w-4/12 flex flex-col items-center justify-center h-full py-[20px] sm:py-[35px] px-[15px] sm:px-[25px] bg-white dark:bg-black dark:text-white dark:shadow-chooseBox rounded-lg wow animate__animated animate__zoomIn'>
-                                            <img src={aboutBox.image} alt="" className='w-[40%] md:w-[20%] pb-[20px]' />
+                                            <img src={aboutBox.image} alt={aboutBox.image} className='w-[40%] md:w-[20%] pb-[20px]' />
                                             <h3 className='uppercase font-Secondary text-[12px] sm:text-[14px] md:text-[16px]'>{aboutBox.title}</h3>
                                         </li>
                                     ))}
