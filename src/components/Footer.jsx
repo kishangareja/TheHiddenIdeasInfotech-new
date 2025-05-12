@@ -23,8 +23,8 @@ const Footer = () => {
     const companyLinks = [
         { FLink: 'About', path: "/about" },
         { FLink: 'Service', path: "/service" },
+        { FLink: 'Gallery', path: "/gallery" },
         { FLink: 'Company', path: "/company" },
-        { FLink: 'Contact', path: "/contact" },
     ];
 
     const serviceLinks = [

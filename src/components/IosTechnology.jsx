@@ -14,7 +14,7 @@ const items = [
 const IosTechnology = () => {
   return (
     <>
-    <section className='py-[50px] h-fit bg-ios_banner bg-no-repeat bg-cover bg-blend-darken bg-[#000000a4] border-b-[3px] border-black'>
+        <section className='py-[50px] h-fit bg-ios_banner bg-no-repeat bg-cover bg-blend-darken bg-[#000000a4] border-b-[3px] border-black'>
                 <div className="container">
                     <div className="row">
                         <div className="xl:px-[50px] 3xl:px-[150px] mb-[25px] sm:mb-[50px]">
@@ -56,7 +56,7 @@ const IosTechnology = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+        </section>
     </>
   )
 }

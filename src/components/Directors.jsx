@@ -28,12 +28,12 @@ const Directors = () => {
     {
       image: person1,
       name: "Kishan Gareja",
-      role: "CEO",
+      role: "Founder",
     },
     {
       image: person2,
       name: "Jay Vaghela",
-      role: "CTO",
+      role: "CEO",
     },
   ];
 

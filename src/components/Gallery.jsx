@@ -96,7 +96,7 @@ const Gallery = () => {
           <div className="flex justify-center mt-6">
             <button
               onClick={handleLoadMore}
-              className="bg-Primary text-white px-6 py-3 rounded-full shadow-md hover:shadow-lg transition-all"
+              className="bg-Primary text-white px-6 py-3 rounded-full shadow-md hover:shadow-lg transition-all uppercase"
             >
               {showMore ? 'Load More' : 'See More'}
             </button>
