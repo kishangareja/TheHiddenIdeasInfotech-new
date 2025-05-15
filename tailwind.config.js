@@ -123,6 +123,7 @@ module.exports = {
         mariaDb_banner: "url('/src/assets/Maria_DB.png')",
         sqLite_banner: "url('/src/assets/SqLite_bg.png')",
         postgresql_banner: "url('/src/assets/Postgresql_bg.png')",
+        highlight: "url('/src/assets/highlight.jpg')",
         'custom-gradient': 'linear-gradient(to left, rgba(255, 255, 255, 0), #1173b9ee)',
         'custom-gradient2': 'linear-gradient(to right, rgba(255, 255, 255, 0), #1173b9ee)',
         'custom-gradient3': 'linear-gradient(to bottom right, rgba(255, 255, 255, 0), #1173b9de)',

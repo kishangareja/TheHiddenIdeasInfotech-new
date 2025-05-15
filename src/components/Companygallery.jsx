@@ -8,7 +8,7 @@ import company7 from '../assets/company7.jpg'
 import company8 from '../assets/company8.png'
 import company9 from '../assets/company9.jpg'
 import company10 from '../assets/company10.jpeg'
-import highlight from '../assets/highlight.png'
+import highlight from '../assets/highlight.jpg'
 
 const Companygallery = () => {
     return (
@@ -17,8 +17,12 @@ const Companygallery = () => {
                 <div className="container">
                     <div className="row">
                         <div className="relative heading flex justify-center text-[24px] sm:text-[30px] md:text-[38px] dark:text-white font-Secondary font-semibold mb-[40px] uppercase tracking-widest text-center md:text-start wow animate__animated animate__zoomIn">
-                            <h2 className='relative z-10 text-white'>Our Team</h2>
-                            <img src={highlight} alt={highlight} className='absolute top-0 left-[23%] sm:left-[28%] lg:left-[32%] xl:left-[37%] w-[54%] sm:w-[44%] lg:w-[34%]  xl:w-[25%] h-full' />
+                            <h2 className="relative z-10 text-white">Life at The Hidden Ideas Infotech</h2>
+                            <img 
+                                src={highlight} 
+                                alt="highlight background" 
+                                className="absolute top-0 left-[23%] sm:left-[28%] lg:left-[32%] xl:left-[21%] w-[54%] sm:w-[44%] lg:w-[34%] xl:w-[55%] h-full z-0 pointer-events-none" 
+                            />
                         </div>
                         <div className="lg:mx-[50px] 2xl:mx-[100px] 3xl:mx-[150px] hidden md:block">
                             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -49,7 +53,7 @@ const Companygallery = () => {
                                         <img className="h-auto max-w-full rounded-lg" src={company7} alt={company7} />
                                     </div>
                                     <div>
-                                        <img className="h-auto max-w-full rounded-lg" src={company10} alt={company10} />
+                                        <img className="h-auto max-w-full rounded-lg"  src={company10} alt={company10} />
                                     </div>
                                     <div>
                                         <img className="h-auto max-w-full rounded-lg" src={company8} alt={company8} />
@@ -61,15 +65,15 @@ const Companygallery = () => {
                         {/* mobile screen  */}
                         <div className="lg:mx-[50px] 2xl:mx-[100px] 3xl:mx-[150px] py-6 block md:hidden">
                             <div className="flex flex-wrap justify-center grid-rows-2 grid-flow-col gap-4">
-                                <img className="w-[330px] sm:w-[260px] h-full  object-cover rounded-lg" src={company9} alt="company9" />
-                                <img className="w-[330px] sm:w-[260px] h-full  object-cover rounded-lg" src={company1} alt="company1" />
-                                <img className="w-[330px] sm:w-[260px] h-full  object-cover rounded-lg" src={company4} alt="company4" />
-                                <img className="w-[330px] sm:w-[260px] h-full  object-cover rounded-lg" src={company3} alt="company3" />
-                                <img className="w-[330px] sm:w-[260px] h-full  object-cover rounded-lg" src={company6} alt="company6" />
-                                <img className="w-[330px] sm:w-[260px] h-full  object-cover rounded-lg" src={company7} alt="company7" />
-                                <img className="w-[330px] sm:w-[260px] h-full  object-cover rounded-lg" src={company2} alt="company2" />
-                                <img className="w-[330px] sm:w-[260px] h-full  object-cover rounded-lg" src={company10} alt="company10" />
-                                <img className="w-[330px] sm:w-[260px] h-full  object-cover rounded-lg" src={company8} alt="company8" />
+                                <img className="w-[330px] sm:w-[260px] h-full object-cover rounded-lg" src={company9} alt="company9" />
+                                <img className="w-[330px] sm:w-[260px] h-full object-cover rounded-lg" src={company1} alt="company1" />
+                                <img className="w-[330px] sm:w-[260px] h-full object-cover rounded-lg" src={company4} alt="company4" />
+                                <img className="w-[330px] sm:w-[260px] h-full object-cover rounded-lg" src={company3} alt="company3" />
+                                <img className="w-[330px] sm:w-[260px] h-full object-cover rounded-lg" src={company6} alt="company6" />
+                                <img className="w-[330px] sm:w-[260px] h-full object-cover rounded-lg" src={company7} alt="company7" />
+                                <img className="w-[330px] sm:w-[260px] h-full object-cover rounded-lg" src={company2} alt="company2" />
+                                <img className="w-[330px] sm:w-[260px] h-full object-cover rounded-lg" src={company10} alt="company10" />
+                                <img className="w-[330px] sm:w-[260px] h-full object-cover rounded-lg" src={company8} alt="company8" />
                             </div>
                         </div>
 

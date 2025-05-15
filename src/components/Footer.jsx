@@ -47,7 +47,7 @@ const Footer = () => {
                 <div className="container">
                     <div className="row">
                         <div className=" footer_top flex flex-wrap  xl:flex-nowrap  3xl:gap-[30px] w-full 3xl:ps-[100px] 3xl:pr-[60px]">
-                            <div className="w-full md:w-6/12 xl:w-6/12 flex md:flex-col gap-[30px] pb-[50px] md:pb-[30px]">
+                            <div className="w-full md:w-6/12 xl:w-[38%] 2xl:w-[38%] 3xl:w-6/12 flex md:flex-col gap-[30px] pb-[50px] md:pb-[30px]">
                                 <div className="px-[10px] xl:px-0">
                                     <div className='cursor-custom dark:cursor-custom_light pb-[30px] lg:pb-[40px] flex justify-center md:justify-start wow animate__animated animate__zoomIn'>
                                         <Link to="/" className='cursor-custom' onClick={() => window.scrollTo(0, 0)}>
@@ -84,7 +84,7 @@ const Footer = () => {
                                     </ul>
                                 </div>
                             </div>
-                            <div className="w-full md:w-6/12 xl:w-2/12 pb-[50px] md:pb-[30px] xl:pb-0 py-1">
+                            <div className="w-full md:w-6/12 xl:w-[14%] 2xl:w-2/12 pb-[50px] md:pb-[30px] xl:pb-0 py-1">
                                 <div className="flex flex-col gap-[15px] md:gap-[30px] px-[10px] xl:px-0 text-center md:text-start">
                                     <h2 className='uppercase font-Secondary tracking-wider font-semibold text-[24px] 3xl:text-[28px] wow animate__animated animate__zoomIn'>
                                         Company

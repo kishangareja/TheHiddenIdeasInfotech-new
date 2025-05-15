@@ -122,7 +122,7 @@ import dev2 from "../assets/Stages-of-Software-Development-Process.webp";
 import word from "../assets/wordpress-development.webp";
 import word1 from "../assets/photo-1587620962725-abab7fe55159.avif";
 import word2 from "../assets/Wordpress-adv.webp";
-import highlight from '../assets/highlight.png'
+import highlight from '../assets/highlight.jpg'
 
 const Gallery = () => {
   const [category, setCategory] = useState('All categories');
