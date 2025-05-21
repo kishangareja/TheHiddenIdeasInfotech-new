@@ -171,7 +171,7 @@ const Footer = () => {
                     </ul>
 
                 </div>
-                <ScrollToTop color='white' className='bg-Primary'
+                {/* <ScrollToTop color='white' className='bg-Primary'
                     smooth
                     style={{
                         background: '#1173b9ee',
@@ -182,7 +182,8 @@ const Footer = () => {
                         justifyItems: 'center',
                         boxShadow: '0 4px 10px rgba(0, 0, 0, 0.1)',
                     }}
-                />
+                /> */}
+                
             </footer >
         </>
     )

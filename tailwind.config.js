@@ -87,6 +87,10 @@ module.exports = {
           '0%': { transform: 'scale(0)', opacity: '0' },
           '100%': { transform: 'scale(1)', opacity: '1' },
         },
+        star: {
+          '0%': { transform: 'translateY(0)' },
+          '100%': { transform: 'translateY(-2000px)' },
+        },
       },
       animation: {
         slideDown: 'slideDown 1s ease-in-out',
@@ -100,6 +104,7 @@ module.exports = {
         screen2: 'screen2 3s linear infinite',
         screen3: 'screen3 3s ease-in-out infinite',
         zoomIn: 'zoomInEffect 0.5s ease-out forwards',
+        star: 'star 50s linear infinite',
       },
       transformOrigin: {
         '50-100': '50% 26%',

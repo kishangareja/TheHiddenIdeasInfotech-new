@@ -19,12 +19,12 @@ const ReactTexhnology = () => {
                         <div className="xl:px-[50px] 3xl:px-[150px] mb-[25px] sm:mb-[50px]">
                             <div className="w-full flex flex-wrap text-white bg-[#1173b998] p-5 sm:p-10 rounded-md">
                                 <div className="w-full lg:w-6/12 text-center sm:text-start mb-5 xl:mb-0">
-                                    <h2 className='text-[20px] sm:text-[26px] xl:text-[30px] 2xl:text-[34px] 3xl:text-[40px] font-Secondary font-medium pb-4'>Why Choose The Hidden ideas For ReactJS Development?</h2>
-                                    <p className='text-[14px] xl:text-[16px] pb-3 font-Primary'>ReactJS is also well-known because it was one of the first JavaScript frameworks released as open source. ReactJS single-direction JS's data flow delivers a solid code to the existing structure even after adding extra features.</p>
-                                    <p className='text-[14px] xl:text-[16px] font-Primary'>The best feature of ReactJS is the ability to reuse code components, which makes the job of a UI designer much easier. Because of this, JavaScript allows the Hire React Js Developers to reuse existing designs. Components are the foundation of ReactJS, and isolated components are simple to manage in ReactJS.</p>
+                                    <h2 className='text-[20px] sm:text-[26px] xl:text-[30px] 2xl:text-[34px] 3xl:text-[40px] font-Secondary font-medium pb-4 wow animate__animated animate__zoomIn'>Why Choose The Hidden ideas For ReactJS Development?</h2>
+                                    <p className='text-[14px] xl:text-[16px] pb-3 font-Primary wow animate__animated animate__zoomIn'>ReactJS is also well-known because it was one of the first JavaScript frameworks released as open source. ReactJS single-direction JS's data flow delivers a solid code to the existing structure even after adding extra features.</p>
+                                    <p className='text-[14px] xl:text-[16px] font-Primary wow animate__animated animate__zoomIn'>The best feature of ReactJS is the ability to reuse code components, which makes the job of a UI designer much easier. Because of this, JavaScript allows the Hire React Js Developers to reuse existing designs. Components are the foundation of ReactJS, and isolated components are simple to manage in ReactJS.</p>
                                 </div>
                                 <div className="w-full lg:w-6/12 flex items-center justify-center">
-                                    <div className="image flex justify-center">
+                                    <div className="image flex justify-center wow animate__animated animate__zoomIn">
                                         <img src={reactmain} alt="" className='w-[200px] md:w-[300px] 3xl:w-[400px] h-[200px] md:h-[300px] 3xl:h-[400px]' />
                                     </div>
                                 </div>
@@ -35,7 +35,7 @@ const ReactTexhnology = () => {
                                 <div className="w-full lg:w-6/12 flex flex-wrap justify-center mb-5 xl:mb-0">
                                     {items.map((item, index) => (
                                         <div key={index} className="w-full md:w-6/12">
-                                            <div className="border-[3px] border-white p-4 m-3 rounded-xl text-center">
+                                            <div className="border-[3px] border-white p-4 m-3 rounded-xl text-center wow animate__animated animate__zoomIn">
                                                 <div className="flex justify-center">
                                                     <img src={item.img} alt={item.title} />
                                                 </div>
@@ -47,9 +47,9 @@ const ReactTexhnology = () => {
                                     ))}
                                 </div>
                                 <div className="w-full lg:w-6/12 text-center sm:text-start md:ps-5 flex flex-col justify-center">
-                                    <h2 className='text-[20px] sm:text-[26px] xl:text-[30px] 2xl:text-[34px] 3xl:text-[40px] font-Secondary font-medium pb-4'>We help you create Apps for</h2>
-                                    <p className='text-[14px] xl:text-[16px] pb-3 font-Primary'>Single Page Applications that deliver fast and dynamic user experiences. E-commerce and Product Catalogs with real-time browsing, filtering, and secure payments. Social Media and Community Platforms that foster interaction with posts, messaging, and engagement features. </p>
-                                    <p className='text-[14px] xl:text-[16px] font-Primary'>Educational Platforms for online learning, quizzes, and course tracking.     Admin Dashboards for managing users, data, and analytics. and Booking or Scheduling Systems that streamline reservations, appointments, and event management.  </p>
+                                    <h2 className='text-[20px] sm:text-[26px] xl:text-[30px] 2xl:text-[34px] 3xl:text-[40px] font-Secondary font-medium pb-4 wow animate__animated animate__zoomIn'>We help you create Apps for</h2>
+                                    <p className='text-[14px] xl:text-[16px] pb-3 font-Primary wow animate__animated animate__zoomIn'>Single Page Applications that deliver fast and dynamic user experiences. E-commerce and Product Catalogs with real-time browsing, filtering, and secure payments. Social Media and Community Platforms that foster interaction with posts, messaging, and engagement features. </p>
+                                    <p className='text-[14px] xl:text-[16px] font-Primary wow animate__animated animate__zoomIn'>Educational Platforms for online learning, quizzes, and course tracking.     Admin Dashboards for managing users, data, and analytics. and Booking or Scheduling Systems that streamline reservations, appointments, and event management.  </p>
                                 </div>
                             </div>
                         </div>

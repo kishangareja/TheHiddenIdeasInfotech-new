@@ -141,4 +141,19 @@ code {
     gap: 1rem;
   }
 
+@layer utilities {
+  @keyframes star {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-2000px);
+    }
+  }
 
+  .animate-star {
+    animation-name: star;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+}

@@ -9,7 +9,7 @@ const WebdevlopmentBanner = () => {
                         <div className="w-full flex ">
                             <div className="w-6/12">
                                 <div className='flex justify-center'>
-                                    <svg xmlns="https://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 500 500" className='w-full lg:w-[450px] xl:w-[550px] 2xl:w-[600px] 3xl:w-[700px] h-full lg:h-[450px] xl:h-[550px] 2xl:h-[600px] 3xl:h-[720px]' fill="enable-background:new 0 0 500 500" >
+                                    <svg xmlns="https://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 500 500" className='w-full lg:w-[450px] xl:w-[550px] 2xl:w-[600px] 3xl:w-[700px] h-full lg:h-[450px] xl:h-[550px] 2xl:h-[600px] 3xl:h-[720px] wow animate__animated animate__zoomIn' fill="enable-background:new 0 0 500 500" >
                                         <g id="Floor">
                                             <path id="Floor_7_" fill="#F5F5F5" d="M112.778,454.08c-75.785-43.755-75.785-114.696,0-158.45s198.658-43.754,274.443,0   s75.785,114.695,0,158.45C311.436,497.835,188.564,497.835,112.778,454.08z" />
                                         </g>
@@ -1072,10 +1072,10 @@ const WebdevlopmentBanner = () => {
                                 </div>
                             </div>
                             <div className="w-6/12 flex flex-col justify-center">
-                                <h2 className='text-[60px] 3xl:text-[74px] font-semibold text-black dark:text-white font-Secondary'>Web Development</h2>
-                                <p className='text-[20px] font-Primary font-medium text-black dark:text-white'>Being a well-reputed web app development company, we specialize in designing, building, testing, and deploying web-based applications tailored to propel businesses forward. We are globally recognized as top-rated web app development companies in the United States, Europe, Africa, MENA & UAE regions for creating fast and secure web apps using modern programming languages and agile methodologies.</p>
+                                <h2 className='text-[60px] 3xl:text-[74px] font-semibold text-black dark:text-white font-Secondary wow animate__animated animate__zoomIn'>Web Development</h2>
+                                <p className='text-[20px] font-Primary font-medium text-black dark:text-white wow animate__animated animate__zoomIn'>Being a well-reputed web app development company, we specialize in designing, building, testing, and deploying web-based applications tailored to propel businesses forward. We are globally recognized as top-rated web app development companies in the United States, Europe, Africa, MENA & UAE regions for creating fast and secure web apps using modern programming languages and agile methodologies.</p>
                                 <div className="mt-6">
-                                    <button className="cursor-custom relative flex items-center justify-center xl:justify-start group  overflow-hidden py-2 sm:py-3 px-3 sm:px-6 font-Secondary text-Primary text-[14px] sm:text-[16px] rounded-lg hover:bg-primary-dark uppercase font-semibold border-[3px] border-Primary tracking-wider transition-all duration-[0.5s] bg-white  hover:border-[3px]">
+                                    <button className="cursor-custom relative flex items-center justify-center xl:justify-start group  overflow-hidden py-2 sm:py-3 px-3 sm:px-6 font-Secondary text-Primary text-[14px] sm:text-[16px] rounded-lg hover:bg-primary-dark uppercase font-semibold border-[3px] border-Primary tracking-wider transition-all duration-[0.5s] bg-white  hover:border-[3px] wow animate__animated animate__zoomIn">
                                         Any More Web development
                                         <span className="absolute inset-0 w-[300px] h-[200px] bg-Primary group-hover:left-[130%] group-hover:top-[130%] transition-all duration-500 ease-out rotate-[25deg] left-[-320px] top-[-150px]"></span>
                                     </button>
@@ -1090,17 +1090,17 @@ const WebdevlopmentBanner = () => {
                     <div className="row">
                         <div className="w-full flex flex-wrap">
                         <div className="w-full flex  flex-col justify-center mb-[30px] text-center">
-                                <h2 className='text-[24px] sm:text-[42px] md:text-[52px] text-black dark:text-white font-semibold font-Secondary'>Web Development</h2>
-                                <p className='text-[14px] sm:text-[16px] md:text-[18px] text-black dark:text-white font-Primary font-medium'>Being a well-reputed web app development company, we specialize in designing, building, testing, and deploying web-based applications tailored to propel businesses forward. We are globally recognized as top-rated web app development companies in the United States, Europe, Africa, MENA & UAE regions for creating fast and secure web apps using modern programming languages and agile methodologies.</p>
+                                <h2 className='text-[24px] sm:text-[42px] md:text-[52px] text-black dark:text-white font-semibold font-Secondary wow animate__animated animate__zoomIn'>Web Development</h2>
+                                <p className='text-[14px] sm:text-[16px] md:text-[18px] text-black dark:text-white font-Primary font-medium wow animate__animated animate__zoomIn'>Being a well-reputed web app development company, we specialize in designing, building, testing, and deploying web-based applications tailored to propel businesses forward. We are globally recognized as top-rated web app development companies in the United States, Europe, Africa, MENA & UAE regions for creating fast and secure web apps using modern programming languages and agile methodologies.</p>
                                 <div className="mt-6 flex justify-center">
-                                    <button className="cursor-custom relative flex items-center justify-center xl:justify-start group  overflow-hidden py-2 sm:py-3 px-3 sm:px-6 font-Secondary text-Primary text-[14px] sm:text-[16px] rounded-lg hover:bg-primary-dark uppercase font-semibold border-[3px] border-Primary tracking-wider transition-all duration-[0.5s] bg-white  hover:border-[3px]">
+                                    <button className="cursor-custom relative flex items-center justify-center xl:justify-start group  overflow-hidden py-2 sm:py-3 px-3 sm:px-6 font-Secondary text-Primary text-[14px] sm:text-[16px] rounded-lg hover:bg-primary-dark uppercase font-semibold border-[3px] border-Primary tracking-wider transition-all duration-[0.5s] bg-white  hover:border-[3px] wow animate__animated animate__zoomIn">
                                         Any More Web development
                                         <span className="absolute inset-0 w-[300px] h-[200px] bg-Primary group-hover:left-[130%] group-hover:top-[130%] transition-all duration-500 ease-out rotate-[25deg] left-[-320px] top-[-150px]"></span>
                                     </button>
                                 </div>
                             </div>
                             <div className="w-full">
-                                <div className='flex justify-center'>
+                                <div className='flex justify-center wow animate__animated animate__zoomIn'>
                                     <svg xmlns="https://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 500 500" className='w-full md:w-[400px] lg:w-[500px]   h-full md:h-[400px] lg:h-[500px]' fill="enable-background:new 0 0 500 500" >
                                         <g id="Floor">
                                             <path id="Floor_7_" fill="#F5F5F5" d="M112.778,454.08c-75.785-43.755-75.785-114.696,0-158.45s198.658-43.754,274.443,0   s75.785,114.695,0,158.45C311.436,497.835,188.564,497.835,112.778,454.08z" />

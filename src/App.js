@@ -1,5 +1,5 @@
 import { useState, useEffect, } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation  } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
@@ -38,6 +38,7 @@ import PostgreSQL from "./components/PostgreSQL";
 function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [loading, setLoading] = useState(true);
+  const location = useLocation();
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -48,6 +49,7 @@ function App() {
 
   // usePreventInspect();
 
+
   return (
     <>
 
@@ -57,7 +59,7 @@ function App() {
         <>
           <ScrollToTop />
           <Header mobileMenuOpen={mobileMenuOpen} setMobileMenuOpen={setMobileMenuOpen} />
-          <div className={`${mobileMenuOpen ? 'blur-background' : ''}`}>
+          <div className={`${mobileMenuOpen ? 'blur-background' : ''}`} >
             <Routes>
               {/* Main page  */}
               <Route path="/" element={<Home />} />
