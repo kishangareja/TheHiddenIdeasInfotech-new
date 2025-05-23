@@ -4,6 +4,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { CgClose } from "react-icons/cg";
 import { FaAngleDown } from "react-icons/fa6";
 import Logo from "../assets/Logo.png";
+import Logodark from "../assets/logo-dark.png";
 import DarkModeToggle from "./DarkModeToggle";
 import { FaChevronRight } from "react-icons/fa";
 
@@ -112,7 +113,8 @@ const Header = ({ mobileMenuOpen, setMobileMenuOpen }) => {
       <div className="container xl:mx-auto">
         <div className="flex items-center justify-between">
           <Link to="/" className="cursor-pointer" onClick={() => window.scrollTo(0, 0)}>
-            <img src={Logo} alt="Logo" className="h-10 sm:h-[50px] md:h-[50px] xl:h-[65px]" />
+            <img src={Logo} alt="Logo" className="dark:hidden flex h-10 sm:h-[50px] md:h-[50px] xl:h-[65px]" />
+            <img src={Logodark} alt="Logo" className="dark:flex hidden h-10 sm:h-[50px] md:h-[50px] xl:h-[65px]" />
           </Link>
 
           <div className="lg:w-[85%] xl:w-[79%] 2xl:w-[78%] 3xl:w-[66%] justify-between hidden lg:flex items-center">

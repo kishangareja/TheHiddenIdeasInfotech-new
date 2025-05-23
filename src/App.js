@@ -49,10 +49,99 @@ function App() {
 
   // usePreventInspect();
 
+ useEffect(() => {
+    const originalTitle = document.title;
+    const alertTitle = 'come back!';
 
+    const originalFaviconHref = '/favicon.ico';
+    const alertFaviconHref = '/favicon-hat.ico';
+
+    const setFavicon = (href) => {
+      let link = document.querySelector("link[rel~='icon']");
+      if (!link) {
+        link = document.createElement('link');
+        link.rel = 'icon';
+        document.head.appendChild(link);
+      }
+      link.href = href;
+    };
+
+    const handleVisibilityChange = () => {
+      if (document.hidden) {
+        document.title = alertTitle;
+        setFavicon(alertFaviconHref);
+      } else {
+        document.title = originalTitle;
+        setFavicon(originalFaviconHref);
+      }
+    };
+
+    // Set initial favicon (optional)
+    setFavicon(originalFaviconHref);
+
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+
+    return () => {
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
+    };
+  }, []);
+
+
+// flip effect 
+
+// useEffect(() => {
+//     const originalTitle = document.title;
+//     const alertTitle = 'come back!';
+
+//     const originalFaviconHref = '/favicon.ico';
+//     const alertFaviconHref = '/favicon-hat.ico';
+
+//     let flipInterval;
+//     let showingAlertIcon = false;
+
+//     const setFavicon = (href) => {
+//       let link = document.querySelector("link[rel~='icon']");
+//       if (!link) {
+//         link = document.createElement('link');
+//         link.rel = 'icon';
+//         document.head.appendChild(link);
+//       }
+//       link.href = href;
+//     };
+
+//     const startFlippingFavicon = () => {
+//       flipInterval = setInterval(() => {
+//         setFavicon(showingAlertIcon ? originalFaviconHref : alertFaviconHref);
+//         showingAlertIcon = !showingAlertIcon;
+//       }, 500); // Flip every 500ms
+//     };
+
+//     const stopFlippingFavicon = () => {
+//       clearInterval(flipInterval);
+//       setFavicon(originalFaviconHref);
+//     };
+
+//     const handleVisibilityChange = () => {
+//       if (document.hidden) {
+//         document.title = alertTitle;
+//         startFlippingFavicon();
+//       } else {
+//         document.title = originalTitle;
+//         stopFlippingFavicon();
+//       }
+//     };
+
+//     // Initial favicon setup
+//     setFavicon(originalFaviconHref);
+//     document.addEventListener('visibilitychange', handleVisibilityChange);
+
+//     return () => {
+//       document.removeEventListener('visibilitychange', handleVisibilityChange);
+//       clearInterval(flipInterval);
+//     };
+//   }, []);
   return (
     <>
-
       {loading ? (
         <Loader />
       ) : (

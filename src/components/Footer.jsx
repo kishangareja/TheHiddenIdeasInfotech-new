@@ -4,7 +4,6 @@ import { TbPhoneCall, TbClockHour4 } from "react-icons/tb";
 import { RiFacebookFill } from "react-icons/ri";
 import { BiLogoLinkedin, BiLogoInstagramAlt } from "react-icons/bi";
 import { Link, NavLink, useNavigate } from 'react-router-dom';
-import ScrollToTop from "react-scroll-to-top";
 import { BsMicrosoftTeams } from "react-icons/bs";
 
 const Footer = () => {
@@ -171,19 +170,6 @@ const Footer = () => {
                     </ul>
 
                 </div>
-                {/* <ScrollToTop color='white' className='bg-Primary'
-                    smooth
-                    style={{
-                        background: '#1173b9ee',
-                        fill: 'white',
-                        borderRadius: '10%',
-                        width: '40px',
-                        height: '40px',
-                        justifyItems: 'center',
-                        boxShadow: '0 4px 10px rgba(0, 0, 0, 0.1)',
-                    }}
-                /> */}
-                
             </footer >
         </>
     )
