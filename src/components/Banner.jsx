@@ -1,142 +1,138 @@
 import { useState, useEffect, useRef } from "react";
 import { IoClose } from "react-icons/io5";
+import { useNavigate } from 'react-router-dom';
 import Wow from "wow.js";
 import "animate.css";
 import emailjs from "@emailjs/browser";
 
 const Banner = () => {
-  const formRef = useRef();
-  const [isOpen, setIsOpen] = useState(false);
-  const [isClosing, setIsClosing] = useState(false);
+  // const formRef = useRef();
+  // const [isOpen, setIsOpen] = useState(false);
+  // const [isClosing, setIsClosing] = useState(false);
 
-  const [formData, setFormData] = useState({
-    name: "",
-    phone_no: "",
-    message: "",
-  });
+  // const [formData, setFormData] = useState({
+  //   name: "",
+  //   phone_no: "",
+  //   message: "",
+  // });
 
-  const [formStatus, setFormStatus] = useState({
-    isSubmitting: false,
-    successMessage: "",
-    errorMessage: "",
-  });
+  // const [formStatus, setFormStatus] = useState({
+  //   isSubmitting: false,
+  //   successMessage: "",
+  //   errorMessage: "",
+  // });
 
-  const [showModal, setShowModal] = useState(false);
-  const [error, setError] = useState("");
-
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    if (name === "phone_no") {
-      if (!/^\d{10}$/.test(value)) { 
-        setError("Invalid phone number. Please enter a 10-digit number.");
-      } else {
-        setError("");
-      }
-    }
-    setFormData({ ...formData, [name]: value });
-  };
+  // const [showModal, setShowModal] = useState(false);
+  // const [error, setError] = useState("");
 
 
-  const validatePhone = (phone) => {
-    return /^[0-9]{10}$/.test(phone);
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    if (!formData.name || !formData.phone_no || !formData.message) {
-      setFormStatus({ errorMessage: "Please fill in all fields.", successMessage: "" });
-      setShowModal(true);
-      return;
-    }
-
-    if (!validatePhone(formData.phone_no)) {
-      setFormStatus({ errorMessage: "Invalid phone number. Enter a valid 10-digit number.", successMessage: "" });
-      setShowModal(true);
-      return;
-    }
-
-    setFormStatus({ isSubmitting: true, successMessage: "", errorMessage: "" });
-
-    // try {
-    //       await new Promise((resolve) => setTimeout(resolve, 1000));
-
-    //       setFormData({ name: "", phone_no: "", message: "" });
-    //       setFormStatus({ isSubmitting: false, successMessage: "Message sent successfully!", errorMessage: "" });
-    //       setShowModal(true);
+  // const handleChange = (e) => {
+  //   const { name, value } = e.target;
+  //   if (name === "phone_no") {
+  //     if (!/^\d{10}$/.test(value)) { 
+  //       setError("Invalid phone number. Please enter a 10-digit number.");
+  //     } else {
+  //       setError("");
+  //     }
+  //   }
+  //   setFormData({ ...formData, [name]: value });
+  // };
 
 
-    //       setTimeout(() => {
-    //         setIsOpen(false);
-    //         setShowModal(false);
-    //       }, 2000);
-    //     } catch (error) {
-    //       setFormStatus({ isSubmitting: false, successMessage: "", errorMessage: "An error occurred, please try again later." });
-    //       setShowModal(true);
-    //     }
+  // const validatePhone = (phone) => {
+  //   return /^[0-9]{10}$/.test(phone);
+  // };
 
-    emailjs
-      .sendForm("service_3ukcssu", "template_dbxs0md", formRef.current, "P-OSDlUB9u3dfTODU")
-      .then(
-        () => {
-          setFormData({ name: "", phone_no: "", message: "" });
-          setFormStatus({ isSubmitting: false, successMessage: "Message sent successfully!", errorMessage: "" });
-          setShowModal(true);
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
 
-          setTimeout(() => {
-            setShowModal(false);
-            setIsOpen(false);
-          }, 2000);
-        },
-        () => {
-          setFormStatus({ isSubmitting: false, successMessage: "", errorMessage: "Failed to send message. Try again!" });
-          setShowModal(true);
-        }
-      );
-  };
+  //   if (!formData.name || !formData.phone_no || !formData.message) {
+  //     setFormStatus({ errorMessage: "Please fill in all fields.", successMessage: "" });
+  //     setShowModal(true);
+  //     return;
+  //   }
 
-  useEffect(() => {
-    const handleKeydown = (e) => {
-      if (e.key === "Escape" && isOpen) {
-        toggleModal();
-      }
-    };
+  //   if (!validatePhone(formData.phone_no)) {
+  //     setFormStatus({ errorMessage: "Invalid phone number. Enter a valid 10-digit number.", successMessage: "" });
+  //     setShowModal(true);
+  //     return;
+  //   }
 
-    if (isOpen) {
-      window.addEventListener("keydown", handleKeydown);
-      document.body.style.overflow = "hidden";
-    } else {
-      window.removeEventListener("keydown", handleKeydown);
-      document.body.style.overflow = "auto";
-    }
+  //   setFormStatus({ isSubmitting: true, successMessage: "", errorMessage: "" });
 
-    return () => {
-      window.removeEventListener("keydown", handleKeydown);
-      document.body.style.overflow = "auto";
-    };
-  },);
+  //   emailjs
+  //     .sendForm("service_3ukcssu", "template_dbxs0md", formRef.current, "P-OSDlUB9u3dfTODU")
+  //     .then(
+  //       () => {
+  //         setFormData({ name: "", phone_no: "", message: "" });
+  //         setFormStatus({ isSubmitting: false, successMessage: "Message sent successfully!", errorMessage: "" });
+  //         setShowModal(true);
+
+  //         setTimeout(() => {
+  //           setShowModal(false);
+  //           setIsOpen(false);
+  //         }, 2000);
+  //       },
+  //       () => {
+  //         setFormStatus({ isSubmitting: false, successMessage: "", errorMessage: "Failed to send message. Try again!" });
+  //         setShowModal(true);
+  //       }
+  //     );
+  // };
+
+  // useEffect(() => {
+  //   const handleKeydown = (e) => {
+  //     if (e.key === "Escape" && isOpen) {
+  //       toggleModal();
+  //     }
+  //   };
+
+  //   if (isOpen) {
+  //     window.addEventListener("keydown", handleKeydown);
+  //     document.body.style.overflow = "hidden";
+  //   } else {
+  //     window.removeEventListener("keydown", handleKeydown);
+  //     document.body.style.overflow = "auto";
+  //   }
+
+  //   return () => {
+  //     window.removeEventListener("keydown", handleKeydown);
+  //     document.body.style.overflow = "auto";
+  //   };
+  // },);
 
 
-  const closeModal = () => {
-    setShowModal(false);
-  };
+  // const closeModal = () => {
+  //   setShowModal(false);
+  // };
 
-  const toggleModal = () => {
-    if (isOpen) {
-      setIsClosing(true);
-      setTimeout(() => {
-        setIsOpen(false);
-        setIsClosing(false);
-      }, 300);
-    } else {
-      setIsOpen(true);
-    }
-  };
+  // const toggleModal = () => {
+  //   if (isOpen) {
+  //     setIsClosing(true);
+  //     setTimeout(() => {
+  //       setIsOpen(false);
+  //       setIsClosing(false);
+  //     }, 300);
+  //   } else {
+  //     setIsOpen(true);
+  //   }
+  // };
 
   useEffect(() => {
     new Wow({ live: false }).init();
   }, []);
+
+  const navigate = useNavigate();
+
+   const handleContactClick = () => {
+        window.scrollTo(0, 0);  
+        navigate("/about");
+        const contactSection = document.getElementById("contact-us");
+        if (contactSection) {
+          contactSection.scrollIntoView({ behavior: "smooth" });
+        }
+      };
+
 
   return (
     <>
@@ -149,7 +145,7 @@ const Banner = () => {
                   Your Vision, Our Code Delivered Innovation todays.
                 </h3>
                 <h2 className="text-[28px] sm:text-[50px] 3xl:text-[74px] dark:text-Primary font-Secondary font-bold pb-[15px] sm:pb-0 wow animate__animated animate__zoomIn">
-                  The Hidden Ideas
+                  The Hidden Ideas  
                 </h2>
                 <p className="text-[14px] sm:text-[16px] md:text-[20px] capitalize font-Secondary tracking-wider wow animate__animated animate__zoomIn">
                   Welcome to a world where innovation meets precision.The Hidden Ideas specializes in crafting high-quality, cost-effective
@@ -157,12 +153,12 @@ const Banner = () => {
                   team ensures your vision becomes a digital masterpiece.
                 </p>
                 <div className="pt-[30px] flex justify-center xl:justify-start wow animate__animated animate__zoomIn">
-                  <button onClick={toggleModal} className="cursor-custom dark:cursor-custom_light relative flex items-center justify-center xl:justify-start group overflow-hidden py-2 sm:py-3 px-3 sm:px-6 font-Secondary text-Primary text-[14px] sm:text-[16px] rounded-lg
+                  <button onClick={handleContactClick} className="cursor-custom dark:cursor-custom_light relative flex items-center justify-center xl:justify-start group overflow-hidden py-2 sm:py-3 px-3 sm:px-6 font-Secondary text-Primary text-[14px] sm:text-[16px] rounded-lg
                    hover:bg-primary-dark uppercase font-semibold border-[3px] border-Primary tracking-wider transition-all duration-[0.7s] bg-white hover:border-[3px]">
                     Let’s Build Together
                     <span className="absolute inset-0 w-[300px] h-[200px] bg-Primary group-hover:left-[130%] group-hover:top-[130%] transition-all duration-500 ease-out rotate-[25deg] left-[-320px] top-[-150px]"></span>
                   </button>
-                  {isOpen && (
+                  {/* {isOpen && (
                     <div
                       className={`fixed inset-0 flex justify-center items-center bg-black bg-opacity-40 z-50 transition-all duration-500 ease-in-out`}
                       onClick={toggleModal}
@@ -201,8 +197,6 @@ const Banner = () => {
                               />
                                 {error && <p className="text-red-500 text-sm">{error}</p>
                                     }
-                              
-                                
                                 </div>
                                 
                             <div className="text-start w-full md:px-[10px] py-[10px] sm:py-[20px] wow animate__animated animate__zoomIn">
@@ -257,7 +251,7 @@ const Banner = () => {
                         )}
                       </div>
                     </div>
-                  )}
+                  )} */}
                 </div>
               </div>
               <div className="Banner_svg w-full lg:w-6/12 flex justify-end wow animate__animated animate__zoomIn">
@@ -2556,20 +2550,3 @@ const Banner = () => {
 };
 
 export default Banner;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

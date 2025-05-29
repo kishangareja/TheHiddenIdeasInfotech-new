@@ -52,7 +52,7 @@ const Discuss = () => {
             setFormStatus({ errorMessage: "Please fill in all fields.", successMessage: "", isSubmitting: false });
             setShowModal(true);
             return;
-        }
+        }       
 
         if (!validatePhone(formData.phone_no)) {
             setFormStatus({ errorMessage: "Invalid phone number. Enter a valid 10-digit number.", successMessage: "", isSubmitting: false });
@@ -62,36 +62,20 @@ const Discuss = () => {
 
         setFormStatus({ isSubmitting: true, successMessage: "", errorMessage: "" });
 
-        // const templateParams = {
-        //     name: formData.name,
-        //     phone_no: formData.phone_no,
-        //     date: scheduleDate,
-        //     time: scheduleTime,
-        // };
-
-        // try {
-        //     await emailjs.send(
-        //         'your_service_id', 
-        //         'your_template_id', 
-        //         templateParams, 
-        //         'your_public_key'
-        //     );
-        //     setFormData({ name: "", phone_no: "" });
-        //     setscheduleDate("dd/MM/yyyy");
-        //     setscheduleTime("00:00");
-        //     setFormStatus({ isSubmitting: false, successMessage: "Meeting scheduled successfully!", errorMessage: "" });
-        //     setShowModal(true);
-        //     setTimeout(() => {
-        //         setIsOpen(false);
-        //         setShowModal(false);
-        //     }, 2000);
-        // } catch (error) {
-        //     setFormStatus({ isSubmitting: false, successMessage: "", errorMessage: "An error occurred, please try again later." });
-        //     setShowModal(true);
-        // }
-
+        const templateParams = {
+            name: formData.name,
+            phone_no: formData.phone_no,
+            date: scheduleDate,
+            time: scheduleTime,
+        };
         try {
-            await new Promise((resolve) => setTimeout(resolve, 1000));
+
+             await emailjs.send(
+                'service_3ukcssu', 
+                'template_dbxs0md', 
+                templateParams, 
+                'P-OSDlUB9u3dfTODU'
+            );
 
             setFormData({ name: "", phone_no: "",});
             setscheduleDate("dd/MM/yyyy");

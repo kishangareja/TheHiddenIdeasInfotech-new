@@ -56,7 +56,7 @@ const imageData = {
     diwali: [company12,],
     ganpati: [ company6,company16,company17],
     birthday: [ company14,],
-    thifamliy: [company1, company4, company2, company10, company7, company8, company9, company4, company3],
+    thifamliy: [company1, company4, company2, company10, company7, company8, company9, company3],
 };
 
 const THILife = () => {
