@@ -20,7 +20,7 @@
   }
 
   html {
-    scroll-behavior: initial;
+    scroll-behavior: smooth;
   }
 }
 
@@ -156,4 +156,57 @@ code {
     animation-timing-function: linear;
     animation-iteration-count: infinite;
   }
+}
+.animation-container {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: visible;
+  transition: border-color 0.3s ease;
+}
+
+.animation-container:hover {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.circle-container {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-left {
+  top: -8px;
+  left: -8px;
+  transition-delay: 0s;
+}
+
+.top-right {
+  top: -8px;
+  right: -8px;
+  transform: rotate(90deg);
+  transition-delay: 0.1s;
+}
+
+.bottom-left {
+  bottom: -8px;
+  left: -8px;
+  transform: rotate(-90deg);
+  transition-delay: 0.2s;
+}
+
+.bottom-right {
+  bottom: -8px;
+  right: -8px;
+  transform: rotate(180deg);
+  transition-delay: 0.3s;
 }

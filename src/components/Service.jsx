@@ -6,7 +6,6 @@ import website_color from "../assets/settings color.png";
 import android_color from "../assets/android color.png";
 import uiux_color from "../assets/ux-design color.png";
 import hosting_color from "../assets/hosting color.png";
-import { Link } from "react-router-dom";
 
 const serviceData = [
   {
@@ -61,12 +60,12 @@ const Service = () => {
                         <div className="w-[80px] 2xl:w-[100px] 3xl:w-[120px] h-[80px] 2xl:h-[100px] 3xl:h-[120px] transition-all duration-[0.5s] ease-in bg-Primary group-hover:bg-white p-[30px] rounded-full  relative">
                           <img
                             src={service.image}
-                            alt=""
-                            className=" absolute w-[40px] 2xl:w-[50px] 3xl:w-[65px] h-[40px] 2xl:h-[50px] 3xl:h-[65px] top-[22px] 2xl:top-[27px] left-[21px] 2xl:left-[26px] 3xl:left-[28px]  duration-300 "
+                            alt="serviceimage"
+                            className="absolute w-[40px] 2xl:w-[50px] 3xl:w-[65px] h-[40px] 2xl:h-[50px] 3xl:h-[65px] top-[22px] 2xl:top-[27px] left-[21px] 2xl:left-[26px] 3xl:left-[28px]  duration-300 "
                           />
                           <img
                             src={service.colorImage}
-                            alt=""
+                            alt="serviceimage"
                             className=" absolute w-[40px] 2xl:w-[50px] 3xl:w-[65px] h-[40px] 2xl:h-[50px] 3xl:h-[65px] top-[22px] 2xl:top-[27px] left-[21px] 2xl:left-[26px] 3xl:left-[28px] transition-opacity duration-300 group-hover:opacity-100 opacity-0"
                           />
                         </div>

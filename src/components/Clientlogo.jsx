@@ -64,7 +64,7 @@ const Clientlogo = () => {
                         <div className="heading flex justify-center text-[24px] sm:text-[30px] md:text-[38px]  font-Primary font-bold mb-[50px] uppercase tracking-wider wow animate__animated animate__zoomIn">
                             <h2>Valued Clients</h2>
                         </div>
-                        <div className="flex flex-wrap w-full gap-[30px] justify-center hidden  lg:flex">
+                        <div className="flex-wrap w-full gap-[30px] justify-center hidden  lg:flex">
                             {clientLogo.map((clientLogo, index) => (
                                 <div key={index} className="cursor-custom dark:cursor-custom_light w-3/12 lg:w-2/12 3xl:w-1/12 flex justify-center items-center border-[3px] border-Primary rounded-xl p-[40px] grayscale transition-all duration-[0.2s] hover:grayscale-0  wow animate__animated animate__zoomIn">
                                     <img src={clientLogo.Logo} alt={`Client ${index + 1}`} />

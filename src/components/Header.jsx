@@ -83,7 +83,7 @@ const Header = ({ mobileMenuOpen, setMobileMenuOpen }) => {
   const handleContactClick = () => {
     window.scrollTo(0, 0);
     setMobileMenuOpen(false);
-    navigate("/contactform");
+    navigate("/contact");
     const contactSection = document.getElementById("contact-us");
     if (contactSection) {
       contactSection.scrollIntoView({ behavior: "smooth" });
@@ -178,11 +178,11 @@ const Header = ({ mobileMenuOpen, setMobileMenuOpen }) => {
             </nav>
             <div className="flex gap-[10px] items-center">
               <DarkModeToggle />
-              <a href="/contact" className="cursor-custom dark:cursor-custom_light relative flex items-center justify-center xl:justify-start group overflow-hidden py-2 sm:py-3 px-3 sm:px-6 font-Secondary text-Primary text-[14px] sm:text-[16px] rounded-lg
+              <button onClick={handleContactClick} className="cursor-custom dark:cursor-custom_light relative flex items-center justify-center xl:justify-start group overflow-hidden py-2 sm:py-3 px-3 sm:px-6 font-Secondary text-Primary text-[14px] sm:text-[16px] rounded-lg
                    hover:bg-primary-dark uppercase font-semibold border-[3px] border-Primary tracking-wider transition-all duration-[0.7s] bg-white hover:border-[3px]">
                 Contact Us
                 <span className="absolute inset-0 w-[300px] h-[200px] bg-Primary group-hover:left-[130%] group-hover:top-[130%] transition-all duration-500 ease-out rotate-[25deg] left-[-320px] top-[-150px]"></span>
-              </a>
+              </button>
             </div>
           </div>
 

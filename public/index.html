@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -11,6 +9,7 @@
     <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#000000" />
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com; object-src 'none';">
     <link rel="canonical" href="https://hiddenideasinfotech.com/">
     <meta property="og:title" content="Innovative IT Solutions | Hidden Ideas Infotech">
     <meta property="og:description" content="Discover cutting-edge IT solutions tailored to your business needs.">
@@ -32,6 +31,55 @@
 
       gtag('config', 'G-DT0C4591MX');
     </script>
+    
+    <!-- Script to monitor external script loading -->
+    <script>
+      // Monitor script loading to identify problematic scripts
+      const originalCreateElement = document.createElement;
+      document.createElement = function(tagName) {
+        const element = originalCreateElement.call(document, tagName);
+        const originalSetAttribute = element.setAttribute;
+        if (tagName.toLowerCase() === 'script') {
+          element.setAttribute = function(name, value) {
+            if (name === 'src') {
+              // Block the specifzic problematic script
+              if (value.includes('cdn.jsinit.directfwd.com') || value.includes('sk-jspark_init.php')) {
+                console.error('Blocked malicious script:', value);
+                return; // Prevent the script from loading
+              }
+              // Warn about any HTTP scripts
+              if (value.includes('http://')) {
+                console.warn('Insecure script detected:', value);
+              }
+            }
+            return originalSetAttribute.call(this, name, value);
+          };
+          
+          // Also monitor appendChild to catch dynamically added scripts
+          const originalAppendChild = element.appendChild;
+          element.appendChild = function(child) {
+            if (child.tagName && child.tagName.toLowerCase() === 'script') {
+              const src = child.src || child.getAttribute('src');
+              if (src && (src.includes('cdn.jsinit.directfwd.com') || src.includes('sk-jspark_init.php'))) {
+                console.error('Blocked malicious script via appendChild:', src);
+                return child; // Return without actually appending
+              }
+            }
+            return originalAppendChild.call(this, child);
+          };
+        }
+        return element;
+      };
+      
+      // Monitor for any existing scripts with the problematic domain
+      document.addEventListener('DOMContentLoaded', function() {
+        const scripts = document.querySelectorAll('script[src*="cdn.jsinit.directfwd.com"]');
+        scripts.forEach(script => {
+          console.error('Found existing malicious script:', script.src);
+          script.remove(); // Remove the script
+        });
+      });
+    </script>
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
@@ -50,14 +98,5 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-      <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-DT0C4591MX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-DT0C4591MX');
-</script>
   </body>
 </html>
