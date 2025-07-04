@@ -9,7 +9,7 @@ const DatabaseBanner = () => {
                         <div className="w-full flex ">
                             <div className="w-6/12">
                                 <div className='flex justify-center'>
-                                    <svg xmlns="http://www.w3.org/2000/svg"  version="1.1" x="0px" y="0px" viewBox="0 0 750 500" fill="enable-background:new 0 0 750 500">
+                                    <svg xmlns="https://www.w3.org/2000/svg"  version="1.1" x="0px" y="0px" viewBox="0 0 750 500" fill="enable-background:new 0 0 750 500">
                                         <g id="Background_Complete">
                                             <g>
                                                 <g>
@@ -1042,7 +1042,7 @@ const DatabaseBanner = () => {
                             </div>
                             <div className="w-full">
                                 <div className='flex justify-center'>
-                                <svg xmlns="http://www.w3.org/2000/svg"  version="1.1" x="0px" y="0px" viewBox="0 0 750 500" fill="enable-background:new 0 0 750 500">
+                                <svg xmlns="https://www.w3.org/2000/svg"  version="1.1" x="0px" y="0px" viewBox="0 0 750 500" fill="enable-background:new 0 0 750 500">
                                         <g id="Background_Complete">
                                             <g>
                                                 <g>

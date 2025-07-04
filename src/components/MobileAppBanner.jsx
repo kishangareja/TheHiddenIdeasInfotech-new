@@ -9,7 +9,7 @@ const MobileAppBanner = () => {
                         <div className="w-full flex ">
                             <div className="w-6/12">
                                 <div className='flex justify-center'>
-                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 500 500" fill="enable-background:new 0 0 500 500" className='w-full lg:w-[450px] xl:w-[550px] 2xl:w-[600px] 3xl:w-[700px] h-full lg:h-[450px] xl:h-[550px] 2xl:h-[600px] 3xl:h-[680px]'>
+                                    <svg xmlns="https://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 500 500" fill="enable-background:new 0 0 500 500" className='w-full lg:w-[450px] xl:w-[550px] 2xl:w-[600px] 3xl:w-[700px] h-full lg:h-[450px] xl:h-[550px] 2xl:h-[600px] 3xl:h-[680px]'>
                                         <g id="Floor">
                                             <path id="Floor_2_" fill="#F5F5F5" d="M76.912,439.824c-95.594-61.957-95.594-162.408,0-224.363   c95.594-61.956,250.582-61.956,346.176,0s95.594,162.407,0,224.363C327.494,501.781,172.506,501.781,76.912,439.824z" />
                                         </g>
@@ -1547,7 +1547,7 @@ const MobileAppBanner = () => {
                             </div>
                             <div className="w-full">
                                 <div className='flex justify-center'>
-                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 500 500" fill="enable-background:new 0 0 500 500" className='w-full lg:w-[450px] xl:w-[550px] 2xl:w-[600px] 3xl:w-[700px] h-full lg:h-[450px] xl:h-[550px] 2xl:h-[600px] 3xl:h-[680px]'>
+                                    <svg xmlns="https://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 500 500" fill="enable-background:new 0 0 500 500" className='w-full lg:w-[450px] xl:w-[550px] 2xl:w-[600px] 3xl:w-[700px] h-full lg:h-[450px] xl:h-[550px] 2xl:h-[600px] 3xl:h-[680px]'>
                                         <g id="Floor">
                                             <path id="Floor_2_" fill="#F5F5F5" d="M76.912,439.824c-95.594-61.957-95.594-162.408,0-224.363   c95.594-61.956,250.582-61.956,346.176,0s95.594,162.407,0,224.363C327.494,501.781,172.506,501.781,76.912,439.824z" />
                                         </g>
