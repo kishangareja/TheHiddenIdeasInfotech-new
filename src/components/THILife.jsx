@@ -19,6 +19,7 @@ import company17 from '../assets/company17.jpg'
 import company18 from '../assets/company18.jpg'
 import company19 from '../assets/company19.jpg'
 
+
 const generateShadows = (count, size) => {
     const shadows = []
     for (let i = 0; i < count; i++) {
