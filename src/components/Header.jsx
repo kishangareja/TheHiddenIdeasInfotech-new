@@ -130,7 +130,7 @@ const Header = ({ mobileMenuOpen, setMobileMenuOpen }) => {
                     <NavLink
                       to={link.path || "#"}
                       className={({ isActive }) =>
-                        `cursor-custom dark:cursor-custom_light uppercase font-semibold text-[16px] 2xl:text-[18px] font-Secondary tracking-widest duration-200 ${isActive || (link.name === "Service" && isServiceSubmenuActive)
+                        `cursor-custom dark:cursor-custom_light uppercase flex items-center gap-1 font-semibold text-[16px] 2xl:text-[18px] font-Secondary tracking-widest duration-200 ${isActive || (link.name === "Service" && isServiceSubmenuActive)
                           ? "text-Primary dark:text-Primary"
                           : "text-gray-700 dark:text-white"
                         } hover:text-Primary dark:hover:text-Primary`
@@ -138,9 +138,18 @@ const Header = ({ mobileMenuOpen, setMobileMenuOpen }) => {
                       onClick={() => window.scrollTo(0, 0)}
                     >
                       {link.name}
+                      {link.submenu && (
+                      <FaAngleDown
+                        className={` transition-transform duration-300 ${
+                          activeSubmenu === index
+                            ? "rotate-180 text-Primary"
+                            : "text-gray-700 dark:text-white"
+                        }`}
+                      />
+                    )}
                     </NavLink>
                     {link.submenu && activeSubmenu === index && (
-                      <div className="absolute left-[40%] top-[22px] bg-white dark:bg-black shadow-lg rounded-lg p-4 z-50 w-max">
+                      <div className="absolute left-[40%] top-[22px] bg-white dark:bg-black shadow-xl rounded-lg p-4 z-50 w-max">
                         <ul className="flex flex-col">
                           {link.submenu.map((submenuCategory, id) => (
                             <li key={id} className="relative group">

@@ -81,7 +81,7 @@ const Testimonial = () => {
               before:left-auto before:right-0 before:duration-[0.5s] hover:before:w-[100%] before:blur-2xl before:z-[-1] after:absolute 
               after:w-0 after:h-full after:top-0 after:bg-custom-gradient3 after:rounded-2xl after:bottom-0 after:left-0 
               after:right-auto after:duration-[0.5s] hover:after:w-[100%] after:rotate-[180deg] after:blur-2xl after:z-[-1]">
-              <div className="flex mb-[30px] wow animate__animated animate__zoomIn">
+              <div className="flex items-center mb-[30px] wow animate__animated animate__zoomIn">
                 <FaUser style={{ color: '#1173b9ee' }} className="w-[40px] h-[40px] object-cover rounded-full border-2 bg-white py-2 hover:border-white"
                 />
                 <div className="ml-4 flex flex-col justify-center">

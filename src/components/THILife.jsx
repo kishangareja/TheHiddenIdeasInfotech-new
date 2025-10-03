@@ -6,6 +6,7 @@ import company1 from '../assets/company1.jpg'
 import company2 from '../assets/company2.jpg'
 import company3 from '../assets/company3.jpg'
 import company4 from '../assets/company4.jpg'
+import company5 from '../assets/company5.jpg'
 import company6 from '../assets/company6.jpg'
 import company7 from '../assets/company7.jpg'
 import company8 from '../assets/company8.png'
@@ -15,6 +16,8 @@ import company12 from '../assets/company12.png'
 import company14 from '../assets/company14.jpg'
 import company16 from '../assets/company16.jpg'
 import company17 from '../assets/company17.jpg'
+import company18 from '../assets/company18.jpg'
+import company19 from '../assets/company19.jpg'
 
 const generateShadows = (count, size) => {
     const shadows = []
@@ -53,10 +56,10 @@ const StarLayer = ({ count, size, duration }) => {
 }
 
 const imageData = {
-    diwali: [company12],
-    ganpati: [company6, company16, company17],
-    birthday: [company14],
     thifamliy: [company1, company4, company2, company10, company7, company8, company9, company3],
+    ganpati: [company6,  company17, company16, company5, company18, company19],
+    birthday: [company14],
+    diwali: [company12],
 }
 
 const THILife = () => {
@@ -65,10 +68,11 @@ const THILife = () => {
     const [photoIndex, setPhotoIndex] = useState(0)
 
     const tabs = [
-        { id: "diwali", label: "Diwali" },
+        { id: "thifamliy", label: "The Hidden Ideas Famliy" },
         { id: "ganpati", label: "Ganpati" },
         { id: "birthday", label: "Birthday" },
-        { id: "thifamliy", label: "The Hidden Ideas Famliy" },
+        { id: "diwali", label: "Diwali" },
+
     ]
 
     const activeImages = imageData[activeTab]
@@ -98,7 +102,7 @@ const THILife = () => {
                                             <button
                                                 className={`text-[14px] md:text-[16px] inline-block p-2 sm:p-4 border-b-2 rounded-t-lg font-Secondary wow animate__animated animate__zoomIn ${activeTab === tab.id
                                                     ? 'text-Primary border-Primary stroke-white'
-                                                    : 'text-white hover:text-Primary hover:border-Primary dark:hover:text-white'
+                                                    : 'text-white hover:text-Primary hover:border-Primary dark:hover:text-Primary'
                                                     }`}
                                                 onClick={() => setActiveTab(tab.id)}
                                                 type="button"
