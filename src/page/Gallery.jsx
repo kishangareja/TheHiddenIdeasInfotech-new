@@ -62,9 +62,9 @@ const Gallery = () => {
             <button
               key={index}
               type="button"
-              className={`text-slate-500 border-[3px] border-Primary 
-                ${category === cat ? 'bg-Primary text-white' : 'bg-white hover:bg-Primary hover:text-white'}
-                rounded-full font-medium px-5 py-2.5 me-3 mb-3 transition-all wow animate__animated animate__zoomIn`}
+              className={`text-Primary border-[2px] border-Primary
+                ${category === cat ? 'bg-Primary text-white' : 'bg-white'}
+                rounded-lg font-medium font-Secondary py-2 sm:py-2 px-3 sm:px-5  me-3 mb-3 transition-all wow animate__animated animate__zoomIn`}
               onClick={() => handleCategoryClick(cat)}
             >
               {cat}
@@ -89,8 +89,10 @@ const Gallery = () => {
         </Masonry>
 
         <div className="flex justify-center mt-6">
-          <button onClick={() => setShowMore(!showMore)} className="border-[3px] border-Primary text-Primary px-6 py-2 rounded-full hover:bg-Primary hover:text-white transition-all font-semibold">
+          <button onClick={() => setShowMore(!showMore)} className="cursor-custom relative flex items-center justify-center xl:justify-start group  overflow-hidden py-2 sm:py-2 px-3 sm:px-5 font-Secondary text-white text-[14px] sm:text-[16px] rounded-lg 
+              hover:bg-primary-dark uppercase font-semibold tracking-wider transition-all duration-[0.5s] bg-Primary">
             {showMore ? 'Load More' : 'See More'}
+            <span className="absolute inset-0 w-[300px] h-[200px] bg-[#ffffff8e] group-hover:left-[130%] group-hover:top-[130%] transition-all duration-500 ease-out rotate-[25deg] left-[-320px] top-[-150px]"></span>
           </button>
         </div>
       </div>

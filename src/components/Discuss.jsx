@@ -140,9 +140,9 @@ const Discuss = () => {
                                 <h2 className='text-[20px] sm:text-[32px] lg:text-[48px] font-Secondary capitalize font-semibold wow animate__animated animate__zoomIn' >About your upcoming projects and collaborations</h2>
                             </div>
                             <div className=" flex justify-center xl:justify-start wow animate__animated animate__zoomIn">
-                                <button onClick={() => setIsOpen(true)} class="cursor-custom dark:cursor-custom_light relative flex items-center justify-center xl:justify-start   group  overflow-hidden py-2 sm:py-3 px-3 sm:px-6 font-Secondary text-Primary text-[14px] sm:text-[16px] rounded-lg hover:bg-primary-dark uppercase font-semibold border-[3px] border-Primary tracking-wider transition-all duration-[0.5s] bg-white  hover:border-[3px]">
+                                <button onClick={() => setIsOpen(true)} class="cursor-custom dark:cursor-custom_light relative flex items-center justify-center xl:justify-start   group  overflow-hidden py-2 sm:py-2 px-3 sm:px-5 font-Secondary text-white text-[14px] sm:text-[16px] rounded-lg hover:bg-primary-dark uppercase font-semibold tracking-wider transition-all duration-[0.5s] bg-Primary">
                                     Let’s  Meet Together
-                                    <span class="absolute inset-0 w-[300px] h-[200px] bg-Primary group-hover:left-[130%] group-hover:top-[130%] transition-all duration-500 ease-out rotate-[25deg] left-[-320px] top-[-150px]"></span>
+                                    <span class="absolute inset-0 w-[300px] h-[200px] bg-[#ffffff8e] group-hover:left-[130%] group-hover:top-[130%] transition-all duration-500 ease-out rotate-[25deg] left-[-320px] top-[-150px]"></span>
                                 </button>
                                 {isOpen && (
                                     <div

@@ -64,7 +64,7 @@ const imageData = {
 }
 
 const THILife = () => {
-    const [activeTab, setActiveTab] = useState("diwali")
+    const [activeTab, setActiveTab] = useState("thifamliy")
     const [lightboxOpen, setLightboxOpen] = useState(false)
     const [photoIndex, setPhotoIndex] = useState(0)
 

@@ -8,6 +8,7 @@ import Count from '../components/Count'
 import Choose from '../components/Choose'   
 import Testimonial from '../components/Testimonial'
 import Clientlogo from '../components/Clientlogo'
+import Faq from '../components/Faq'
 
 
 const Home = () => {
@@ -17,12 +18,13 @@ const Home = () => {
         <Banner />
         <AboutUs />
         <Service />
-        <Logoslide /> 
-        <Process /> 
-        <Count /> 
-        <Choose />  
-        <Testimonial />   
-        <Clientlogo />  
+        <Logoslide />
+        <Process />
+        <Count />
+        <Choose />
+        <Faq /> 
+        <Testimonial />
+        <Clientlogo />
       </div>
     </>
   )

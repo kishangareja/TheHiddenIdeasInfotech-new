@@ -96,9 +96,11 @@ const Gallery = () => {
           <div className="flex justify-center mt-6">
             <button
               onClick={handleLoadMore}
-              className="bg-Primary text-white px-6 py-3 rounded-full shadow-md hover:shadow-lg transition-all uppercase"
+              className="cursor-custom relative flex items-center justify-center xl:justify-start group  overflow-hidden py-2 sm:py-2 px-3 sm:px-5 font-Secondary text-white text-[14px] sm:text-[16px] rounded-lg 
+              hover:bg-primary-dark uppercase font-semibold tracking-wider transition-all duration-[0.5s] bg-Primary"
             >
               {showMore ? 'Load More' : 'See More'}
+              <span className="absolute inset-0 w-[300px] h-[200px] bg-[#ffffff8e] group-hover:left-[130%] group-hover:top-[130%] transition-all duration-500 ease-out rotate-[25deg] left-[-320px] top-[-150px]"></span>
             </button>
           </div>
         </div>
