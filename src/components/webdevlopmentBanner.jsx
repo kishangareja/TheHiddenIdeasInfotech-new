@@ -1075,9 +1075,9 @@ const WebdevlopmentBanner = () => {
                                 <h2 className='text-[60px] 3xl:text-[74px] font-semibold text-black dark:text-white font-Secondary wow animate__animated animate__zoomIn'>Web Development</h2>
                                 <p className='text-[20px] font-Primary font-medium text-black dark:text-white wow animate__animated animate__zoomIn'>Being a well-reputed web app development company, we specialize in designing, building, testing, and deploying web-based applications tailored to propel businesses forward. We are globally recognized as top-rated web app development companies in the United States, Europe, Africa, MENA & UAE regions for creating fast and secure web apps using modern programming languages and agile methodologies.</p>
                                 <div className="mt-6">
-                                    <button className="cursor-custom relative flex items-center justify-center xl:justify-start group  overflow-hidden py-2 sm:py-3 px-3 sm:px-6 font-Secondary text-Primary text-[14px] sm:text-[16px] rounded-lg hover:bg-primary-dark uppercase font-semibold border-[3px] border-Primary tracking-wider transition-all duration-[0.5s] bg-white  hover:border-[3px] wow animate__animated animate__zoomIn">
+                                    <button className="cursor-custom relative flex items-center justify-center xl:justify-start group  overflow-hidden py-2 sm:py-2 px-3 sm:px-5 font-Secondary text-white text-[14px] sm:text-[16px] rounded-lg hover:bg-primary-dark uppercase font-semibold tracking-wider transition-all duration-[0.5s] bg-Primary  wow animate__animated animate__zoomIn">
                                         Any More Web development
-                                        <span className="absolute inset-0 w-[300px] h-[200px] bg-Primary group-hover:left-[130%] group-hover:top-[130%] transition-all duration-500 ease-out rotate-[25deg] left-[-320px] top-[-150px]"></span>
+                                        <span className="absolute inset-0 w-[300px] h-[200px] bg-[#ffffff8e] group-hover:left-[130%] group-hover:top-[130%] transition-all duration-500 ease-out rotate-[25deg] left-[-320px] top-[-150px]"></span>
                                     </button>
                                 </div>
                             </div>
@@ -1093,9 +1093,9 @@ const WebdevlopmentBanner = () => {
                                 <h2 className='text-[24px] sm:text-[42px] md:text-[52px] text-black dark:text-white font-semibold font-Secondary wow animate__animated animate__zoomIn'>Web Development</h2>
                                 <p className='text-[14px] sm:text-[16px] md:text-[18px] text-black dark:text-white font-Primary font-medium wow animate__animated animate__zoomIn'>Being a well-reputed web app development company, we specialize in designing, building, testing, and deploying web-based applications tailored to propel businesses forward. We are globally recognized as top-rated web app development companies in the United States, Europe, Africa, MENA & UAE regions for creating fast and secure web apps using modern programming languages and agile methodologies.</p>
                                 <div className="mt-6 flex justify-center">
-                                    <button className="cursor-custom relative flex items-center justify-center xl:justify-start group  overflow-hidden py-2 sm:py-3 px-3 sm:px-6 font-Secondary text-Primary text-[14px] sm:text-[16px] rounded-lg hover:bg-primary-dark uppercase font-semibold border-[3px] border-Primary tracking-wider transition-all duration-[0.5s] bg-white  hover:border-[3px] wow animate__animated animate__zoomIn">
+                                    <button className="cursor-custom relative flex items-center justify-center xl:justify-start group  overflow-hidden py-2 sm:py-2 px-3 sm:px-5 font-Secondary text-white text-[14px] sm:text-[16px] rounded-lg hover:bg-primary-dark uppercase font-semibold tracking-wider transition-all duration-[0.5s] bg-Primary wow animate__animated animate__zoomIn">
                                         Any More Web development
-                                        <span className="absolute inset-0 w-[300px] h-[200px] bg-Primary group-hover:left-[130%] group-hover:top-[130%] transition-all duration-500 ease-out rotate-[25deg] left-[-320px] top-[-150px]"></span>
+                                        <span className="absolute inset-0 w-[300px] h-[200px] bg-[#ffffff8e] group-hover:left-[130%] group-hover:top-[130%] transition-all duration-500 ease-out rotate-[25deg] left-[-320px] top-[-150px]"></span>
                                     </button>
                                 </div>
                             </div>

@@ -18,7 +18,7 @@ const Accordion = ({ items = [], allowMultiple = false }) => {
   };
 
   return (
-    <div className="w-full max-w-7xl">
+    <div className="w-full px-4 sm:max-w-7xl">
       {items.map((item, idx) => (
         <div key={item.id ?? idx} className="border-b border-b-[#1173b994] py-6">
           <h3>
@@ -29,7 +29,7 @@ const Accordion = ({ items = [], allowMultiple = false }) => {
               onClick={() => toggleIndex(idx)}
               className="w-full text-left flex items-center justify-between focus:outline-none"
             >
-              <span className="text-lg font-Secondary font-medium">{item.title}</span>
+              <span className="text-sm md:text-lg font-Secondary font-medium">{item.title}</span>
               <svg
                 className={`w-7 h-7 transform transition-transform duration-200 ${
                   isOpen(idx) ? "rotate-180" : "rotate-0"
@@ -116,11 +116,11 @@ const Faq = () => {
 
   return (
     <>
-      <section className="py-[50px] bg-[#7c78781a] dark:bg-black dark:text-white">
+      <section className="pb-[50px] bg-[#7c78781a] dark:bg-black dark:text-white">
         <div className="container">
           <div className="row">
             <div className="w-full flex flex-col items-center justify-center">
-              <h2 className="text-3xl font-bold mb-8 text-center uppercase font-Primary text-[38px] wow animate__ animate__zoomIn  animated">
+              <h2 className="dark:text-white heading flex  justify-center px-[10px] font-bold mb-8 text-center uppercase tracking-wider font-Primary text-[24px] sm:text-[30px] md:text-[38px] wow animate__ animate__zoomIn  animated">
                 Any Questions? We’re Here to Help
               </h2>
               <Accordion items={faqItems} allowMultiple={false} />
